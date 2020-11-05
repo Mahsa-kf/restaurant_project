@@ -1,0 +1,13 @@
+.site-map-container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    background-color: #FAFAF8;
+}
+
+
+.site-map-content-box {
+    margin: 5em 8%;
+    width: 100%;
+
+}
