@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+
+
+
+html {
+    box-sizing:border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+body {
+    font:normal 1em;
+    line-height:1.5;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    font-family: bely, serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2em;
+}
+
+a{
+    text-decoration: none;  
+}
+
+
+.absolute{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+
+
+.red-btn{
+    background-color: #901100;
+    color: #fff;
+    padding: 10px 15px;
+    
+    
+}
+
+.red-btn:hover{
+     background-color: #000;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  width:1px;
+  height:1px;
+}
+
+
+
+
+
+#header{
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+/*
+#header::after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #dedede;
+}
+*/
+
+.nav-bar{
+  text-align: center;
+  margin-left:auto;
+}
+
+#main-menu{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#main-menu ul{
+  display: inline-block;
+}
+
+#main-menu li {
+  display:inline-block;
+  list-style-type:none;
+  margin-right:2em;
+}
+
+#main-menu a{
+   color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#main-menu a:hover{
+  color: #837A3A;
+ font-size: 18px;
+}
+
+#main-menu .reserve-btn a{
+  background-color: #901100;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+#main-menu .reserve-btn a:hover{
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+
+#sub-menu{
+  display:block;
+  /*width:100%;*/
+  margin:0;
+  padding:0.25em 0;
+  position:relative; 
+}
+
+#sub-menu ul{
+  margin:5px 0;
+/*
+  border: solid 1px #dbd7d7; 
+  border-top: solid 5px #FE5B57;
+*/
+  background-color: #fff;
+  width:250px;
+  position:absolute;
+  left:-10000px;
+  text-align: left; 
+}
+
+
+#sub-menu:hover ul {
+  left: -40px;
+  top: 30px;
+  border-top: solid 3px #837A3A;
+}
+
+#sub-menu li{
+   display:block;
+  border-bottom: solid 1px #dbd7d7; 
+  background-color: #fff;
+  padding:5px 0;
+}
+.page-container {
+  max-width:1200px;
+  margin:0 auto;
+  }
+  
+/*.nav-container{
+  width: 95%;
+  height: 75px; */
+/* margin: 0.5em auto;*/
+/*  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+}*/
+
+#site-name{
+  text-align: center;
+}
+
+#site-name img{
+  height: 80px;
+  width: auto;
+}
+
+.main-top-margin{
+   margin-top: 75px;
+}
+
+/************Main**************************/
+h1 {
+  border-bottom: 2px solid #837a3a;
+}
+
+.shipping-title, .billing-title, .payment-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+#general, #payment {
+  padding: 1em;
+}
+#shipping, #billing {
+  border: 3px solid #837a3a;
+  padding: 1em;
+}
+#general, #shipping, #payment, #billing {
+  margin-top: 0;
+}
+.message-limit {
+  font-size: 0.5em;
+}
+
+
+
+
+/*******Footer***********/
+footer{
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-navContainer{
+  display: flex;
+}
+
+.footer-navContainer::after{
+  border-bottom: 1px solid #fff;
+}
+
+.footer-navContainer div{
+  margin-right: 40px;
+}
+
+footer ul{
+  padding-left: 0;
+}
+
+
+footer ul li{
+  list-style: none;
+}
+
+footer div ul li:first-child{
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+.right{
+  margin-left: auto;
+}
+
+.right li{
+  display: inline-block;
+}
+
+
+.right li:first-of-type{
+   margin-right: 20px;   
+}
+
+footer a{
+  color: #fff;
+  font-size: 18px;
+}
+
+footer a:hover{
+  color: #837A3A;
+}
+
+.footer{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.copyright::before{
+  display: block;
+  content: '';
+  font-size: 2px;
+  border: solid 1px #fff;
+  margin: 10px auto;
+}
+
