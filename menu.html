@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Aroma</title>
         <link rel="stylesheet" href="css/styles.css">
+        <script type = "text/javascript" src = "js/menus.js"></script>
     </head>
     <body>
         <div class="nav-container">
@@ -60,139 +61,156 @@
                         <h2>Menu</h2>
                     </div>
                 </div>
+                <div class="tab">
+                    <button class="tablinks active" onclick="openMenus(event, 'appetizers')">Appetizers</button>
+                    <button class="tablinks" onclick="openMenus(event, 'pizza')">Pizza</button>
+                    <button class="tablinks" onclick="openMenus(event, 'pasta')">Pasta</button>
+                    <button class="tablinks" onclick="openMenus(event, 'desserts')">Desserts</button>
+                    <button class="tablinks" onclick="openMenus(event, 'beverages')">Beverages</button>
+                </div>
                 
-                <section class="menu-container">
-                    <div class="menu-section-container">
+                <div id="appetizers" class="tabcontent">
+                    <section class="menu-container">
+                        <div class="menu-section-container">
+                       
+                            <h3>Appetizers</h3>
+                            <p><strong>Aroma Antipasto Platter ($12.95)</strong></p>
+                            
+                            <p>A platter of fine cold cuts consisting of Prosciutto, Parma Ham, Italian Salami, and Cabana Sausage.
+                            </p>
+                            
+                            <p><strong>Cheese Platter ($13.95)</strong></p>
+                            
+                            <p>A combination of aged Italian Mozzarella, Canestrato, Bel Paese, and Bitto cheese.</p>
+                            
+                            
+                            <p><strong>Minestrone Soup ($7.95)</strong>
+                            </p>
+                            
+                            <p>A traditional Italian soup made with vegetables and wild rice.
+                            </p>
+                            
+                        </div>
+                        <div class="menu-section-container">
+                            <img src="images/hanna-balan-efGe3KlnlLg-unsplash.jpg">
+                        </div>
+                   
+                    </section>
+                </div>   
+                <div id="pizza" class="tabcontent">
+                    <section class="menu-container">
+                    
+                        <div class="menu-section-container">
+                            <h3>Pizza</h3>
+                            <p><strong>Pizza Margherita ($21.95)</strong></p>
+                            
+                            <p>Neapolitan-style pizza made with tomatoes, Mozzarella cheese, and fresh basil.
+                            </p>
+                            
+                            <p><strong>Pizza Capricciosa ($22.95)</strong></p>
+                            
+                            <p>Thin crust pizza with Mozzarella cheese, Prosciutto, mushroom, artichoke and tomato.</p>
+                            
+                            
+                        <p><strong>Pizza Quattro Formaggi ($24.95)</strong></p>
+                            
+                            <p>Four cheese pizza combining the savoury flavours of Pecorino, Ricotta, Stracchino, and smoked Provola cheese. </p>
+                            
+                        </div>
+                        <div class="menu-section-container">
+                            <img src="images/hanna-balan-efGe3KlnlLg-unsplash.jpg">
+                        </div>
+                    
+                    </section>
+                </div> 
+                <div id="pasta" class="tabcontent">
+                    <section class="menu-container">
+                    
+                        <div class="menu-section-container">
+                            <h3>Pasta</h3>
+                            <p><strong>Pasta alla Norma ($19.95)</strong></p>
+                            
+                            <p>Sicilian-style pasta dish consisting of macroni, tomatoes, fried aubergines, ricotta cheese, and basil.
+                            </p>
+                            
+                            <p><strong>Pasta alla Carbonara ($20.95)</strong></p>
+                            
+                            <p>Fettuccine pasta in a rich sauce made from eggs, Pecorino Romano cheese, Prosciutto, and black pepper.</p>
+                            
+                            
+                            <p><strong>Spaghetti alle Vongole ($22.95)</strong>
+                            </p>
+                            
+                            <p>Spaghetti pasta with fresh P.E.I. clams in a sauce with garlic, red pepper, parsley and white wine. 
+                            </p>
+                            
+                        </div>
+                        <div class="menu-section-container">
+                            <img src="images/sebastian-coman-photography-mVwQrsnnbHg-unsplash.jpg" alt="Pasta alla Carbonara">
+                        </div>
+                    </section>
+                </div>
+               
+                <div id="desserts" class="tabcontent">
+                    <section class="menu-container">
+                        <div class="menu-section-container">
+                            <h3>Desserts</h3>
+                            <p><strong>Tiramisu ($8.95)</strong></p>
+                            
+                            <p>Decadent coffee-flavoured cake made of ladyfinger biscuits, custard, mascarpone cheese, and cocoa.
+                            </p>
+                            
+                            <p><strong>Gelato ($7.95)</strong></p>
+                            
+                            <p>Milk-based frozen dessert that is rich and refreshing. Your choice of vanilla, chocolate, hazelnut or strawberry flavours.</p>
+                            
+                            
+                            <p><strong>Cannoli ($10.95) </strong>
+                            </p>
+                            
+                            <p>A light Sicilian-style pastry filled with ricotta cheese. 3 pieces in each order.
+                            </p>
+                            
+                        </div>
+                        <div class="menu-section-container">
+                            <img src="images/dessert-3330996_640.jpg" alt="Tiramisu">
+                        </div>
+                          
+                    </section>
+                </div> 
+                <div id="beverages" class="tabcontent">
+                    <section class="menu-container">
+                    
+                        <div class="menu-section-container">
+                            <h3>Beverages</h3>
+                            <p><strong>Italian Soda ($6.95)</strong></p>
+                            
+                            <p>Choose from strawberry, mango or orange flavours.
+                            </p>
+                            
+                            <p><strong>Coffee ($3.95)</strong></p>
+                            
+                            
+                            <p><strong>Red Wine – glass/bottle ($7.95 / $25.95)</strong>
+                            </p>
+                            
+                            <p>A dry Merlot. Made on-site from quality Niagara Region grapes.
 
-                        <h3>Appetizers</h3>
-                        <p><strong>Aroma Antipasto Platter ($12.95)</strong></p>
-                        
-                        <p>A platter of fine cold cuts consisting of Prosciutto, Parma Ham, Italian Salami, and Cabana Sausage.
-                        </p>
-                        
-                        <p><strong>Cheese Platter ($13.95)</strong></p>
-                        
-                        <p>A combination of aged Italian Mozzarella, Canestrato, Bel Paese, and Bitto cheese.</p>
-                        
-                        
-                        <p><strong>Minestrone Soup ($7.95)</strong>
-                        </p>
-                        
-                        <p>A traditional Italian soup made with vegetables and wild rice.
-                        </p>
-                        
-                    </div>
-                    <div class="menu-section-container">
-                        <img src="images/hanna-balan-efGe3KlnlLg-unsplash.jpg">
-                    </div>
-                        
-                </section>
-                <section class="menu-container">
-                    <div class="menu-section-container">
-                        <h3>Pizza</h3>
-                        <p><strong>Pizza Margherita ($21.95)</strong></p>
-                        
-                        <p>Neapolitan-style pizza made with tomatoes, Mozzarella cheese, and fresh basil.
-                        </p>
-                        
-                        <p><strong>Pizza Capricciosa ($22.95)</strong></p>
-                        
-                        <p>Thin crust pizza with Mozzarella cheese, Prosciutto, mushroom, artichoke and tomato.</p>
-                        
-                        
-                       <p><strong>Pizza Quattro Formaggi ($24.95)</strong></p>
-                        
-                        <p>Four cheese pizza combining the savoury flavours of Pecorino, Ricotta, Stracchino, and smoked Provola cheese. </p>
-                        
-                    </div>
-                    <div class="menu-section-container">
-                        <img src="images/hanna-balan-efGe3KlnlLg-unsplash.jpg">
-                    </div>
-                        
-                </section>
-                <section class="menu-container">
-                    <div class="menu-section-container">
-                        <h3>Pasta</h3>
-                        <p><strong>Pasta alla Norma ($19.95)</strong></p>
-                        
-                        <p>Sicilian-style pasta dish consisting of macroni, tomatoes, fried aubergines, ricotta cheese, and basil.
-                        </p>
-                        
-                        <p><strong>Pasta alla Carbonara ($20.95)</strong></p>
-                        
-                        <p>Fettuccine pasta in a rich sauce made from eggs, Pecorino Romano cheese, Prosciutto, and black pepper.</p>
-                        
-                        
-                        <p><strong>Spaghetti alle Vongole ($22.95)</strong>
-                        </p>
-                        
-                        <p>Spaghetti pasta with fresh P.E.I. clams in a sauce with garlic, red pepper, parsley and white wine. 
-                        </p>
-                        
-                    </div>
-                    <div class="menu-section-container">
-                        <img src="images/sebastian-coman-photography-mVwQrsnnbHg-unsplash.jpg" alt="Pasta alla Carbonara">
-                    </div>
-                        
-                </section>
-                <section class="menu-container">
-                    <div class="menu-section-container">
-                        <h3>Dessert</h3>
-                        <p><strong>Tiramisu ($8.95)</strong></p>
-                        
-                        <p>Decadent coffee-flavoured cake made of ladyfinger biscuits, custard, mascarpone cheese, and cocoa.
-                        </p>
-                        
-                        <p><strong>Gelato ($7.95)</strong></p>
-                        
-                        <p>Milk-based frozen dessert that is rich and refreshing. Your choice of vanilla, chocolate, hazelnut or strawberry flavours.</p>
-                        
-                        
-                        <p><strong>Cannoli ($10.95) </strong>
-                        </p>
-                        
-                        <p>A light Sicilian-style pastry filled with ricotta cheese. 3 pieces in each order.
-                        </p>
-                        
-                    </div>
-                    <div class="menu-section-container">
-                        <img src="images/dessert-3330996_640.jpg" alt="Tiramisu">
-                    </div>
-                        
-                </section>
-                <section class="menu-container">
-                    <div class="menu-section-container">
-                        <h3>Beverages</h3>
-                        <p><strong>Italian Soda ($6.95)</strong></p>
-                        
-                        <p>Choose from strawberry, mango or orange flavours.
-                        </p>
-                        
-                        <p><strong>Coffee ($3.95)</strong></p>
-                        
-                        
-                        <p><strong>Red Wine – glass/bottle ($7.95 / $25.95)</strong>
-                        </p>
-                        
-                        <p>A dry Merlot. Made on-site from quality Niagara Region grapes.
+                            </p>
+                            
+                            <p><strong>White Wine – glass/bottle ($7.95 / $25.95)</strong>
+                            </p>
+                            
+                            <p>A semi-sweet Moscato. Made on-site from quality Niagara Region grapes.
 
-                        </p>
-                        
-                        <p><strong>White Wine – glass/bottle ($7.95 / $25.95)</strong>
-                        </p>
-                        
-                        <p>A semi-sweet Moscato. Made on-site from quality Niagara Region grapes.
-
-                        </p>
-                        
-                    </div>
-                    <div class="menu-section-container">
-                        <img src="images/louis-hansel-shotsoflouis-93ccfD84tCA-unsplash.jpg" alt="red wine">
-                    </div>
-                        
-                </section>
-  
-
+                            </p>
+                            
+                        </div>
+                        <div class="menu-section-container">
+                            <img src="images/louis-hansel-shotsoflouis-93ccfD84tCA-unsplash.jpg" alt="red wine">
+                        </div> 
+                    </section>
+                </div>    
             </main>
         </div>
         <footer>
@@ -227,7 +245,7 @@
             </div>   
         </footer>
         
-    
-    
     </body>
+
+    
 </html>
