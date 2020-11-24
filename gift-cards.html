@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Aroma</title>
+        <link rel="stylesheet" href="./css/global.css">
+    </head>
+    <body>
+        <div class="nav-container">
+            <header id="header">
+                <div id="site-name">
+                    <h3 class="hidden">Aroma Ristorante</h3>
+                    <a href="index.html">
+                        <img src="images/logo2.png" alt="Aroma logo">
+                    </a>
+                </div>
+                <div class="nav-bar">
+                    <nav id="main-menu">
+                        <h3 class="hidden">
+                            Main navigaiton
+                        </h3>
+                        <ul>
+                            <li id="sub-menu">
+                                <a href="#">Menus</a>
+                                 <ul>
+                                    <li><a href="menu.html">Menu</a></li>
+                                    <li><a href="specials.html">Special</a></li>
+                                  </ul>
+                            </li>
+                             <li>
+                                <a href="about.html">About</a>
+                            </li>
+                             <li>
+                                 <a href="events.html">Events</a>
+                             </li>
+                             <li>
+                                 <a href="location.html">Location</a>
+                             </li>
+                             <li>
+                                 <a href="gift-cards.html">Gift cards</a>
+                             </li>
+                              <li>
+                                 <a href="career.html">Career</a>
+                             </li>
+                             <li>
+                                 <a href="contact.html">Contact</a>
+                             </li>
+                            <li class="reserve-btn">
+                                <a href="reservations.html">Reservations</a>
+                            </li>
+                        </ul>
+                    </nav>   
+                </div>
+            </header>
+        </div>
+        <div class="main-container">
+          <main>
+<!--VVVVV ADD YOUR UNIQUE PAGE CONTENT  VVVVV-->
+           <div id ="gift-cards">
+            <h1>Gift Cards</h1>
+            <form action="#" method="post" id="giftCardForm" name="form_giftcard" onsubmit="return false">
+              <!--GENERAL SECTION-->
+              <section id="general" class="page">
+              <div>
+                <label for="amount">*Amount:</label>
+                <select name="amount" id="amount">
+                  <option value="amount-0" selected>---Select Amount---</option>
+                  <option value="10" >$10.00</option>
+                  <option value="25">$25.00</option>
+                  <option value="50">$50.00</option>
+                  <option value="100">$100.00</option></select></div>
+              <div>
+                <label for="quantity"> *Quantity:</label>
+                <select name="quantity" id="quantity">
+                  <option value="quant-0" selected>---Select Quantity---</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option></select></div>
+              <div>
+                <label for="recipient">To:</label>
+                <input type="text" id="recipient_name" placeholder="Recipient's name"></div>
+              <div>
+                <label for="sender">From:</label>
+                <input type="text" id="sender_name" placeholder="Sender's name"></div>
+              <div>
+                <label for="sender_email">Sender's email address:</label>
+                <input type="email" id="cardholder_email_address" placeholder="Sender's email address"></div>
+              <div>
+                <label for="message" class="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Add your personal message here..."></textarea></div>
+                <p class="message-limit">200 characters left (5 remaining lines)</p>
+              <div>
+              </section>
+              <!--SHIPPING SECTION-->
+              <section id="shipping" class="page">
+              <p class="shipping-title">Shipping Information</p>
+                <div>
+                  <label for="recipient-name"> Name:</label>
+                  <input type="text" id="recipient_FullName" placeholder="full name"></div>
+                <div>
+                  <label for="recipient-number"> Phone Number:</label>
+                  <input type="number" id="recipient_number" placeholder="(222) 555-5555"></div>
+                <div>
+                  <label for="recipient-address"> Address:</label>
+                  <input type="text" id="recipient_address"></div>
+                <div>
+                  <label for="recipient-address-2"> Address 2 (OPTIONAL):</label>
+                  <input type="text" id="recipient_address_2"></div>
+                <div>
+                  <label for="recipient-city"> City</label>
+                  <input type="text" id="recipient_city" placeholder="Recipient's city"></div>
+                <div>
+                  <label for="recipient-country"> Country </label>
+                  <select name="recipient_country" id="recipient_country">
+                    <option value="country-0">-- Select One --</option>
+                    <option value="CA">Canada</option>
+                    <option value="USA">USA</option></select></div>
+                <div>
+                  <label for="province">Province:</label>
+                  <select name="province" id="Shipping_province">
+                    <option value="province-0">-- Select One --</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="YT">Yukon</option>
+                  </select></div>
+                <div>
+                  <label for="postalcode">ZIP/Postal code:</label>
+                  <input type="text" id="Shipping_postalcode" name="postalcode" placeholder="A1A 1A1"></div>
+                <div>
+                </section>
+                <!--PAYMENT SECTION-->
+                <section id="payment" class="page">
+                <p class="payment-title">Payment Method</p>
+                <div>
+                  <label for="sender-nameoncard"> Name Shown on Card:</label>
+                  <input type="text" id="sender-nameoncard" ></div>
+                <div>
+                  <label for="sender-cardnumber"> Card Number:</label>
+                  <input type="number" id="sender-cardnumber"></div>
+                <div>
+                  <label for="sender-expirydate">Expiry Date</label>
+                  <select name="expiry-month" id="expiry-month">
+                    <option value="month-0" selected>Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="Jun">Jun</option>
+                    <option value="Jul">Jul</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sept">Sept</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option></select>
+                    <select name="expiry-year" id="expiry-year">
+                      <option value="year-0" selected>Year</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option></select></div>
+                <div>
+                  <label for="cvv">CVV Number</label>
+                  <input type="text" name="cvv" id="cvv"></div>
+              </section>
+              <section id="billing" class="page">
+                <p class="billing-title">Billing Address</p>
+                <div>
+                  <label for="cardholder_address"> Address </label>
+                  <input type="text" id="cardholder_address"></div>
+                <div>
+                  <label for="cardholder-address_2"> Address 2 (Optional) </label>
+                  <input type="text" id="cardholder-address_2"></div>
+                <div>
+                  <label for="cardholder_country"> Country </label>
+                  <select name="cardholder_country" id="cardholder_country">
+                    <option value="country-0">-- Select One --</option>
+                    <option value="CA">Canada</option></select></div>
+                <div>
+                  <label for="cardholder_province">Province:</label>
+                  <select name="cardholder_province" id="cardholder_province">
+                    <option value="province-0">-- Select One --</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="YT">Yukon</option>
+                  </select></div>
+                <div>
+                  <label for="cardholder_city"> City</label>
+                  <input type="text" id="cardholder_city" ></div>
+                <div>
+                  <label for="cardholder_postalcode">ZIP/Postal code:</label>
+                  <input type="text" id="cardholder_postalcode" name="cardholder_postalcode"></div>
+                <div>
+                  <label for="cardholder_phonenumber"> Phone Number:</label>
+                  <input type="number" id="cardholder_phonenumber"></div>
+              </section>
+              <button id="next_btn" type="button">Next</button>
+            </form>
+            <!--#### OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES) #### -->
+            <div id="thanks_msg">
+              <h2>Thank you <span id="thanksCustomer"></span> for your purchase!</h2>
+            <div>
+              <p>Your package will be sent to <span id="thanksPC">you</span>.</p>
+            </div>
+
+
+
+           </div>
+<!--VVVVV END OF UNIQUE PAGE CONTENT  VVVVV-->
+          </main>
+        </div>
+          <footer>
+            <div class="footer">
+              <div class="footer-navContainer">
+                  <div>
+                      <ul>
+                          <li>Location</li>
+                          <li>111 Yonge Street</li>
+                          <li>Toronto A1A 1A2</li>
+                          <li>Phone: 416.111.1111</li>
+                          <li>info@aroma.com</li>
+                      </ul>
+                  </div>
+                  <div>
+                      <ul>
+                          <li>Opening Hours</li>
+                          <li>LUNCH: Mon - Fri </li>
+                          <li>11:30AM - 3PM</li>
+                          <li>DINNER: Mon - Sat</li>
+                          <li>5:30PM - 10PM</li>
+                      </ul>
+                  </div>
+                  <nav class="right">
+                      <ul>
+                          <li><a href="sitemap.html">Sitemap</a></li>
+                          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="copyright">Copyright 2020 Aroma</div>
+            </div>   
+          </footer>
+    </body>
+</html>
