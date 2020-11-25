@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script defer type="text/javascript" src="js/event-booking.js"></script>
+    
+    <link rel="stylesheet" href="css/event-booking.css" />
+    <title>Event Booking</title>
+</head>
+<body>
+    <h2>Event Booking</h2>
+
+    <form>
+        <div>
+            <label for="name">Customer name: <span class="reqstar">*</span></label>
+            <input type="text" id="name" name="name" />
+            <span class="helpspan" id="namehelp"></span>    
+        </div>
+        <div>
+            <label for="email">Customer email: <span class="reqstar">*</span></label>
+            <input type="email" id="email" name="email" />
+            <span class="helpspan" id="emailhelp"></span> 
+        </div> 
+        <div>
+            <label for="phone">Customer phone number: <span class="reqstar">*</span></label>
+            <input type="text" id="phone" name="phone" />
+            <span class="helpspan" id="phonehelp"></span>
+        </div>
+        <div>
+            <label for="eventType">Event type: <span class="reqstar">*</span></label>
+            <select id="eventType" name="eventType">
+                <option value="none">=== SELECT ONE ===</option>
+                <option value="wedding">Wedding</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="gathering">Family Gathering</option>
+                <option value="corporate">Corporate Function</option>
+                <option value="other">Other (describe below)</option>
+            </select>
+            <span class="helpspan" id="eventhelp"></span>
+        </div>
+        <div>
+            <label for="eventDate">Event date: <span class="reqstar">*</span></label>
+            <input id="eventDate" type="text" name="eventDime" placeholder="mm/dd/yyyy">
+            <span class="helpspan" id="eventdatehelp"></span>
+        </div>
+        <div>
+            <label for="bookingDetails">Booking details: <span class="reqstar">*</span></label>
+            <textarea id="bookingDetails" name="bookingDetails" placeholder=""></textarea>
+            <span class="helpspan" id="bookinghelp"></span> 
+        </div>
+        <div>
+            <button id="submitbtn" type="button">Submit</button>
+        </div>
+    </form>
+
+    <p id="submitconfirm"></p>
+
+</body>
+</html>
