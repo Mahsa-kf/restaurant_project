@@ -99,7 +99,4 @@ document.getElementById("submitbtn").addEventListener("click", function(){
             document.getElementById('submitconfirm').innerHTML = 'Your form was not submitted. Please provide the necessary information and resubmit.';
         }
 
-        console.log(eventDate.value);
-        console.log(eventDateError);
-
     });
