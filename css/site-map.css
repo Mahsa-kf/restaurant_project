@@ -9,5 +9,19 @@
 .site-map-content-box {
     margin: 5em 8%;
     width: 100%;
+}
 
+.collapsible a {
+    width: 200px;
+    display: inline-block;
+}
+
+.collapse-btn {
+    background: inherit;
+    border: none;
+    font-size: 30px;
+}
+
+.collapse-btn:focus {
+    outline: none;
 }
