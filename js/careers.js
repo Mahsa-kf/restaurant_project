@@ -1,6 +1,5 @@
 //alert("hello");
-window.onload = initAll;
-function initAll() {
+jQuery(document).ready(function () { 
     var jobsListElement = document.getElementById("jobList");
     getJobList();
 
@@ -28,7 +27,7 @@ function initAll() {
                         var description = xmlJobList[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
                         
                         var newJobHtml = `
-                                <div class="job-posting-1">
+                            <div class="job-posting">
                                 <h3>${jobTitle}</h3>
                                 <p>
                                     <b>Location: </b><span>${location}</span>
@@ -36,26 +35,30 @@ function initAll() {
                                 <p>
                                     <b>Job Type: </b><span>${jobType}</span>
                                 </p>
-                                <p>${description}</p>
+                                <p class="job-description">${description}</p>
                             </div>                
-                        `
-                        
+                        `                    
                         jobsListElement.innerHTML += newJobHtml;
-
                     }
-                    //FINALLY, END THE TABLE AND OUTPUT TO OUR <div>.
- 
-               //     jobsListElement.innerHTML = tblOut;
 
+                    $('.job-description').hide();
 
+                    $('.job-posting').click(function(){
+                        // Show/Hide the Job description
+                        $(this).find('.job-description').slideToggle(500);
+                    });
+                    
 
                 } else {
                     alert("Connection was unsuccessful");
                 }
             }
-        }//end readyState function
+        }
 
         xhr.open("GET", "data/jobPosting.xml", true);
         xhr.send(null);
+
+
+
     }
-}
+});
