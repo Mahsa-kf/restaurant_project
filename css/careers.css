@@ -1,0 +1,31 @@
+
+main {
+    background-color: #F7F7F7;
+}
+
+.careers-section-container{
+    padding:35px 0;
+}
+    
+[class*="job-posting"] {
+    margin: 3em 8%;
+    padding: 5px 35px;       
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3)
+}
+
+h3 {
+    text-align: left;
+}
+
+.aboutBg-white{
+    background-color: rgba(255, 255, 255, 1);
+
+    padding: 40px 60px;
+/*    outline: solid 0.25em #837A3A;
+    outline-offset: -1.2em;
+*/
+     -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3)
+}
