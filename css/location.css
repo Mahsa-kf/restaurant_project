@@ -1,0 +1,120 @@
+#main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#map {
+    height: 300px;
+    width: 46%;
+    position: relative;
+    float: right;
+    top: -20.8em;
+    right: 1em;
+}
+
+.coloring {
+    color: #901100;
+    background-color: white;
+}
+
+.likebutton {
+    padding: 1em 1em 1em;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1;
+    border: none;
+}
+
+#userReserveNow {
+    position: relative;
+    left: 8em;
+    top: 1em;
+}
+
+#location-maps {
+    position: relative;
+    margin-top: 4em;
+    width: 100%;
+    height: auto;
+}
+
+    #location-maps h2 {
+        margin: 0;
+    }
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 2em;
+}
+
+.background {
+    /*background-image: 
+    url(../images/jordi-pujadas-MHzYnDM34IQ-unsplash.jpg);
+    background-image: url(../images/logo2.png);
+    transform: rotate(-30deg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    background-color: #901100;
+}
+
+.locationDetails {
+    width: 43%;
+    height: 300px;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    color: white;
+}
+
+    .locationDetails p {
+        margin: 0;
+    }
+
+.bookNow p:first-of-type {
+    margin-top: 1em;
+}
+
+.bookNow p:last-of-type {
+    margin-bottom: 1em;
+}
+
+.locationDetails h2 {
+    text-decoration: underline;
+    font-style: normal;
+}
+
+.bookNow {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    top: 1em;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.restaurant h2 {
+    margin: 0;
+    position: relative;
+    right: 4.4em;
+    text-transform: none;
+    font-style: normal;
+}
+
+.restaurant h3 {
+    margin: 0;
+    position: relative;
+    right: 10.3em;
+    text-transform: none;
+    font-style: normal;
+}
+
+.bookTable {
+    display: none;
+}
