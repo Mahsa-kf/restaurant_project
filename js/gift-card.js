@@ -82,7 +82,7 @@ function validateGeneral() {
 
 function showThankYou() {
 	thanks_msg.style.display="block";
-	thanks_msg.innerHTML= "Thank you <strong>" + f_Sender_Name.value + "</strong> for your purchase.<br/> Your total order is " + f_Quantity.value + " X $" + f_Amount.value + " = $" + (f_Quantity.value * f_Amount.value)+" . <br/>A confirmation email will be send to <strong>" + f_sender_Email.value + "</strong> shortly.";
+	thanks_msg.innerHTML= "Thank you <strong>" + f_Sender_Name.value + "</strong> for your purchase.<br/> Your total order is " + f_Quantity.value + " X $" + f_Amount.value + " = $" + (f_Quantity.value * f_Amount.value)+" . <br/>A confirmation email will be sent to <strong>" + f_sender_Email.value + "</strong> shortly.";
 	f_submit_btn.style.display="none";
 
 	return false;
