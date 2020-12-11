@@ -1,99 +1,121 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Aroma</title>
-        <link rel="stylesheet" href="css/global.css">
-    </head>
-    <body>
-        <div class="nav-container">
-            <header id="header">
-                <div id="site-name">
-                    <h3 class="hidden">Aroma Ristorante</h3>
-                    <a href="index.html">
-                        <img src="images/logo2.png" alt="Aroma logo">
-                    </a>
+<head>
+    <meta charset="utf-8" />
+    <title>AROMA - Location</title>
+    <meta name="description" content="Aroma Location">
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/location.css" />
+    <script type="text/javascript" src="./js/location.js"></script>
+
+    <!--GoogleMap API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvgCqN_7vWEhgillCQj4SnXdEdkcLsXfM&callback=initMap" defer>
+    </script>
+
+</head>
+<body>
+    <div class="nav-container">
+        <header id="header">
+            <div id="site-name">
+                <h3 class="hidden">Aroma Ristorante</h3>
+                <a href="index.html">
+                    <img src="images/logo2.png" alt="Aroma logo">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <nav id="main-menu">
+                    <h3 class="hidden">
+                        Main navigaiton
+                    </h3>
+                    <ul>
+                        <li id="sub-menu">
+                            <a href="menu.html">Menus</a>
+                            <ul>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="specials.html">Special</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="location.html">Location</a>
+                        </li>
+                        <li>
+                            <a href="gift-cards.html">Gift cards</a>
+                        </li>
+                        <li>
+                            <a href="career.html">Career</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li class="reserve-btn">
+                            <a href="reservations.html">Reservations</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!--End of NAV BAR-->
+    <div class="location-container">
+
+        <main id="main">
+            <section id="location-maps">
+                <h2>Our Location</h2>
+                <div class="line"></div>
+                <div id="address" class="locationDetails background">
+                    <div class="bookNow">
+                        <h2>At The Restaurant</h2>
+                        <p><span class="bold">General Manager </span><span class="italic">: Jerrin Eldo Mazhuvancherry</span></p>
+                        <p><span class="bold">Kitchen Manager </span><span class="italic">: Monica Geller</span></p>
+                        <p><span class="bold">Take Out </span><span class="italic">: Yes - phone in</span></p>
+                        <p><span class="bold">Dress Code </span><span class="italic">: Casual, smart casual</span></p>
+                        <p><span class="bold">Wheelchair Accessible </span><span class="italic">: Yes</span></p>
+                        <a id="userReserveNow" class="likebutton coloring" href="#">Book a table <span class="bold">NOW</span> </a>
+                    </div>
                 </div>
-                <div class="nav-bar">
-                    <nav id="main-menu">
-                        <h3 class="hidden">
-                            Main navigaiton
-                        </h3>
-                        <ul>
-                            <li id="sub-menu">
-                                <a href="#">Menus</a>
-                                 <ul>
-                                    <li><a href="menu.html">Menu</a></li>
-                                    <li><a href="specials.html">Special</a></li>
-                                  </ul>
-                            </li>
-                             <li>
-                                <a href="about.html">About</a>
-                            </li>
-                             <li>
-                                 <a href="event-booking.html">Events</a>
-                             </li>
-                             <li>
-                                 <a href="location.html">Location</a>
-                             </li>
-                             <li>
-                                 <a href="gift-cards.html">Gift cards</a>
-                             </li>
-                              <li>
-                                 <a href="careers.html">Career</a>
-                             </li>
-                             <li>
-                                 <a href="contact-us.html">Contact</a>
-                             </li>
-                            <li class="reserve-btn">
-                                <a href="reservations.html">Reservations</a>
-                            </li>
-                        </ul>
-                    </nav>   
+                <div id="map">
                 </div>
-            </header>
-        </div>
-        <div class="main-container">
-          <main>
-<!--VVVVV ADD YOUR UNIQUE PAGE CONTENT  VVVVV-->
-           <div id ="YOUR UNIQUE PAGE-ID HERE">
-
-
-
-           </div>
-<!--VVVVV END OF UNIQUE PAGE CONTENT  VVVVV-->
-          </main>
-        </div>
-          <footer>
+            </section>
+        </main>
+        <footer>
             <div class="footer">
-              <div class="footer-navContainer">
-                  <div>
-                      <ul>
-                          <li>Location</li>
-                          <li>111 Yonge Street</li>
-                          <li>Toronto A1A 1A2</li>
-                          <li>Phone: 416.111.1111</li>
-                          <li>info@aroma.com</li>
-                      </ul>
-                  </div>
-                  <div>
-                      <ul>
-                          <li>Opening Hours</li>
-                          <li>LUNCH: Mon - Fri </li>
-                          <li>11:30AM - 3PM</li>
-                          <li>DINNER: Mon - Sat</li>
-                          <li>5:30PM - 10PM</li>
-                      </ul>
-                  </div>
-                  <nav class="right">
-                      <ul>
-                          <li><a href="site-map.html">Sitemap</a></li>
-                          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                      </ul>
-                  </nav>
-              </div>
-              <div class="copyright">Copyright 2020 Aroma</div>
-            </div>   
-          </footer>
-    </body>
+                <div class="footer-navContainer">
+                    <div>
+                        <ul>
+                            <li>Location</li>
+                            <li>111 Yonge Street</li>
+                            <li>Toronto A1A 1A2</li>
+                            <li>Phone: 416.111.1111</li>
+                            <li>info@aroma.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Opening Hours</li>
+                            <li>LUNCH: Mon - Fri </li>
+                            <li>11:30AM - 3PM</li>
+                            <li>DINNER: Mon - Sat</li>
+                            <li>5:30PM - 10PM</li>
+                        </ul>
+                    </div>
+                    <nav class="right">
+                        <ul>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="copyright">Copyright 2020 Aroma</div>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
