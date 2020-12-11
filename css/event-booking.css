@@ -32,8 +32,20 @@
     top: 50%;
     z-index: 1;
 }
-
-
+#event-desc {
+    padding-top: 2em;
+    text-align: center;
+    width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+#event-desc > p{
+    text-align: left;
+    max-width: 80%;
+    font-size: 1.3em;
+    margin: 0 auto;
+}
+/********FORM*******/
 .reqstar {
     color: red;
 }

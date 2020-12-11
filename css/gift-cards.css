@@ -48,6 +48,19 @@ h1 {
   width: 100%;
 }
 
+#gift-desc {
+  padding-top: 2em;
+  text-align: center;
+  width: 80%;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+#gift-desc > p{
+  text-align: left;
+  max-width: 80%;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
 
 
 /*Form*/

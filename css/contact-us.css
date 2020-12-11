@@ -31,6 +31,20 @@ bottom: 0;
   top: 50%;
   z-index: 1;
 }
+
+#contact-desc {
+    padding-top: 2em;
+    text-align: center;
+    width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+#contact-desc > p{
+    text-align: left;
+    max-width: 80%;
+    font-size: 1.3em;
+    margin: 0 auto;
+}
 /*Form*/
 
 .message-limit {
