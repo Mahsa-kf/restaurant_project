@@ -37,41 +37,45 @@ bottom: 0;
     font-size: 1em;
     margin-top: 0;
     padding-top: 0;
-  }
-  .message {
+}
+.message {
     display: block;
-  }
-  span {
+}
+span {
     margin-left: 0.5em;
     color: red;
     font-size: 0.8em;
-  }
+}
   
-  .form-container {
+.form-container {
     padding-top: 2em;
     width: 80%;
     margin: 0 auto;
     padding-bottom: 1em;
-  }
+}
   
-  form {
+form {
     max-width: 80%;
     margin: 0 auto;
-  }
-  label {
+}
+
+label {
     font-size: 1.3em;
-  }
-  input, select, textarea {
+}
+
+input, select, textarea {
     width: 100%;
     padding: 0.2em;
     font-size: 1.1em;
-  }
-  .submit-div {
+}
+
+.submit-div {
     width: 50%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2em;
-  }
+    padding-top: 2em;
+}
 
 .reqstar {
     color: red;

@@ -57,32 +57,29 @@
         </div>
       </header>
     </div>
-<!--VVVVV ADD YOUR UNIQUE PAGE CONTENT  VVVVV-->
 <div class="main-container">
     <main>
-      <div class="gift-banner main-top-margin">
+      <div class="gift-banner ">
         <div>
             <h2>Gift Cards</h2>
         </div>
     </div>
     <div class="form-container">
       <form action="#" method="post" id="giftCardForm" name="form_giftcard" onsubmit="return false">
-        <!--GENERAL SECTION-->
         <section id="general" class="page">
         <div>
-          <label for="amount" class="labelName">Amount:</label>
-          <select name="amount" id="amount">
+          <div><label for="amount" class="labelName">Amount:</label></div>
+          <div><select name="amount" id="amount">
             <option value="amount-0" selected>---Select Amount---</option>
             <option value="10" >$10.00</option>
             <option value="25">$25.00</option>
             <option value="50">$50.00</option>
-            <option value="100">$100.00</option></select>
-            <div>
-          <span class="helpspan" id="amountHelp"></span></div>
+            <option value="100">$100.00</option></select></div>
+            <div><span class="helpspan" id="amountHelp"></span></div>
         </div>
         <div>
-          <label for="quantity"  class="labelName"> Quantity:</label>
-          <select name="quantity" id="quantity">
+          <div><label for="quantity"  class="labelName"> Quantity:</label></div>
+          <div><select name="quantity" id="quantity">
             <option value="quant-0" selected>---Select Quantity---</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -93,43 +90,35 @@
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
-            <option value="10">10</option></select>
-            <div>
-          <span class="helpspan" id="quantityHelp"></span></div>
+            <option value="10">10</option></select></div>
+            <div><span class="helpspan" id="quantityHelp"></span></div>
         </div>
-          <div>
-          <div>
-          <label for="recipient_name"  class="labelName">To:</label></div>
-          <div>
-          <input type="text" id="recipient_name" placeholder="Recipient's name"></div>
-          <span class="helpspan" id="recipientNameHelp"></span></div>
         <div>
-          <div>
-          <label for="sender_name"  class="labelName">From:</label></div>
-          <div>
-          <input type="text" id="sender_name" placeholder="Sender's name"></div>
-          <span class="helpspan" id="senderNameHelp"></span></div>
+          <div><label for="recipient_name"  class="labelName">To:</label></div>
+          <div><input type="text" id="recipient_name" placeholder="Recipient's name"></div>
+          <div><span class="helpspan" id="recipientNameHelp"></span></div>
+        </div>
         <div>
-          <div>
-          <label for="cardholder_email_address"  class="labelName">Sender's email address:</label></div>
-          <div>
-          <input type="email" id="cardholder_email_address" placeholder="Sender's email address"></div>
-          <span class="helpspan" id="emailHelp"></span></div>
+          <div><label for="sender_name"  class="labelName">From:</label></div>
+          <div><input type="text" id="sender_name" placeholder="Sender's name"></div>
+          <div><span class="helpspan" id="senderNameHelp"></span></div>
         <div>
-          <div>
-          <label for="message" class="message"  class="labelName">Message:</label></div>
-          <div>
-          <textarea name="message" id="message" cols="30" rows="8" placeholder="Add your personal message here..."></textarea></div>
-          <span class="helpspan" id="messageHelp"></span></div>
-          <div>
-          <p class="message-limit">200 characters left (5 remaining lines)</p></div>
         <div>
+          <div><label for="cardholder_email_address"  class="labelName">Sender's email address:</label></div>
+          <div><input type="email" id="cardholder_email_address" placeholder="Sender's email address"></div>
+          <div><span class="helpspan" id="emailHelp"></span></div>
+        </div>
+        <div>
+          <div><label for="message" class="message"  class="labelName">Message:</label></div>
+          <div><textarea name="message" id="message" cols="30" rows="8" placeholder="Add your personal message here..."></textarea></div>
+          <div><span class="helpspan" id="messageHelp"></span></div>
+          <p class="message-limit">200 characters left (5 remaining lines)</p>
+        </div>
         </section>
-        <div class="submit-div">
-        <button id="submit_btn" type="button">Submit</button></div>
+        <div class="submit-div"><button id="submit_btn" type="button">Submit</button></div>
       </form>
     </div>
-      <!--#### OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES) #### -->
+<!--#### OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES) #### -->
       <div id="thanks_msg">
 	      <h2>Thank you <span id="thanksCustomer"></span> for your purchase!</h2>
 	    <div>
