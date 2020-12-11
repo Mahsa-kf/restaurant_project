@@ -3,7 +3,7 @@
 //   $("#eventDate").datepicker();
     
 //});
-
+//code reference from http://burnignorance.com/javascript-performance-tips/make-jquery-datepicker-to-popup-in-different-positions/
 $('#eventDate').datepicker({
     beforeShow: function (textbox, instance) {   
     instance.dpDiv.css({
