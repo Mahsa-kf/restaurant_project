@@ -10,7 +10,6 @@ document.getElementById("submit_btn").addEventListener("click", function(){
     const phoneRegex = /^\(?\d{3}\)?(-|\s)?\d{3}(-|\s)?\d{4}$/;
     let nameError = false;
     let emailError = false;
-    let phoneError = false;
     let messageError = false;
 
     //Clear any previous error messages
@@ -21,7 +20,6 @@ document.getElementById("submit_btn").addEventListener("click", function(){
         phone.style.borderColor = 'black';
         document.getElementById('namehelp').innerHTML = '';
         document.getElementById('emailhelp').innerHTML = '';
-        document.getElementById('phonehelp').innerHTML = '';
         document.getElementById('messagehelp').innerHTML = '';
         document.getElementById('submitconfirm').innerHTML = '';        
     }
@@ -44,14 +42,6 @@ document.getElementById("submit_btn").addEventListener("click", function(){
         document.getElementById('emailhelp').innerHTML = 'Please enter your email address';
     }
 
-    //Validate phone input
-    if (!phoneRegex.test(phone.value))
-    {
-        phoneError = true;
-        phone.style.borderColor = 'red';
-        document.getElementById('phonehelp').innerHTML = 'Please enter your phone number';
-    }
-
     //Validate message input
     if (message.value === '')
     {
@@ -61,7 +51,7 @@ document.getElementById("submit_btn").addEventListener("click", function(){
     } 
 
     //Evaluate the status of error flags and output either a confirmation message or error notice
-    if (nameError === false && emailError === false && phoneError === false && messageError === false)
+    if (nameError === false && emailError === false && messageError === false)
     {
         clearErrors();        
         document.getElementById('submitconfirm').innerHTML = 'Thank you for your comments.';
