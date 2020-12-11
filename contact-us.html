@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <script defer type="text/javascript" src="js/contact-us.js"></script>
-        <link rel="stylesheet" href="css/contact-us.css" />
+        <link rel="stylesheet" href="./css/global.css">
+        <script type="text/javascript" src="./js/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="./js/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script defer type="text/javascript" src="./js/contact-us.js"></script>
+        <link rel="stylesheet" href="./css/contact-us.css" />
         <title>Contact Us</title>
-        <link rel="stylesheet" href="css/global.css">
     </head>
     <body>
         <div class="nav-container">
@@ -59,34 +61,50 @@
         <div class="main-container">
           <main>
 <!--VVVVV ADD YOUR UNIQUE PAGE CONTENT  VVVVV-->
-           <div id ="contact">
-            <h2>Contact Us</h2>
-
-            <form>
+            <div class="contact-banner main-top-margin">
                 <div>
-                    <label for="name">Customer name: <span class="reqstar">*</span></label>
-                    <input type="text" id="name" name="name" />
-                    <span class="helpspan" id="namehelp"></span>    
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+            <div class="form-container">
+            <form action="#" method="POST" id="contact-us-form" name="contactUsForm">
+                <div>
+                    <div>
+                    <label for="name">Customer name: <span class="reqstar">*</span></label></div>
+                    <div>
+                    <input type="text" id="name" name="name" placeholder="i.e. Jon Smith" /></div>
+                    <div>
+                    <span class="helpspan" id="namehelp"></span></div>   
                 </div>
                 <div>
-                    <label for="email">Customer email: <span class="reqstar">*</span></label>
-                    <input type="email" id="email" name="email" />
-                    <span class="helpspan" id="emailhelp"></span> 
+                    <div>
+                    <label for="email">Customer email: <span class="reqstar">*</span></label></div>
+                    <div>
+                    <input type="email" id="email" name="email" placeholder=" example@example.com"/></div>
+                    <div>
+                    <span class="helpspan" id="emailhelp"></span></div>
                 </div> 
                 <div>
-                    <label for="phone">Customer phone number:</label>
-                    <input type="text" id="phone" name="phone" />
+                    <div>
+                    <label for="phone">Customer phone number:</label></div>
+                    <div>
+                    <input type="text" id="phone" name="phone" placeholder="123-456-7890" /></div>
+                    <div>
+                        <span class="helpspan" id="phonehelp"></span></div>
                 </div>
                 <div>
-                    <label for="message">Enter your message here: <span class="reqstar">*</span></label>
-                    <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
-                    <span class="helpspan" id="messagehelp"></span> 
+                    <div>
+                    <label for="message">Enter your message here: <span class="reqstar">*</span></label></div>
+                    <div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea></div>
+                    <div>
+                    <span class="helpspan" id="messagehelp"></span></div>
                 </div>
-                <div>
-                    <button id="submitbtn" type="button">Submit</button>
+                <div class="submit-div">
+                    <button id="submit_btn" type="button">Submit</button>
                 </div>
             </form>
-        
+        </div>
             <p id="submitconfirm"></p>   
         
            </div>

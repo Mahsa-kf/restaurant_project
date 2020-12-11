@@ -1,5 +1,5 @@
 //Set up listener on submit button
-document.getElementById("submitbtn").addEventListener("click", function(){
+document.getElementById("submit_btn").addEventListener("click", function(){
 
     //Declare variables
     const name = document.getElementById("name");
@@ -7,8 +7,10 @@ document.getElementById("submitbtn").addEventListener("click", function(){
     const phone = document.getElementById("phone");
     const message = document.getElementById("message");
     const emailRegex = /\w+@\w+\.\w+/;
+    const phoneRegex = /^\(?\d{3}\)?(-|\s)?\d{3}(-|\s)?\d{4}$/;
     let nameError = false;
     let emailError = false;
+    let phoneError = false;
     let messageError = false;
 
     //Clear any previous error messages
@@ -16,8 +18,10 @@ document.getElementById("submitbtn").addEventListener("click", function(){
         name.style.borderColor = 'black';
         email.style.borderColor = 'black';
         message.style.borderColor = 'black';
+        phone.style.borderColor = 'black';
         document.getElementById('namehelp').innerHTML = '';
         document.getElementById('emailhelp').innerHTML = '';
+        document.getElementById('phonehelp').innerHTML = '';
         document.getElementById('messagehelp').innerHTML = '';
         document.getElementById('submitconfirm').innerHTML = '';        
     }
@@ -40,6 +44,13 @@ document.getElementById("submitbtn").addEventListener("click", function(){
         document.getElementById('emailhelp').innerHTML = 'Please enter your email address';
     }
 
+    //Validate phone input
+    if (!phoneRegex.test(phone.value))
+    {
+        phoneError = true;
+        phone.style.borderColor = 'red';
+        document.getElementById('phonehelp').innerHTML = 'Please enter your phone number';
+    }
 
     //Validate message input
     if (message.value === '')
@@ -50,7 +61,7 @@ document.getElementById("submitbtn").addEventListener("click", function(){
     } 
 
     //Evaluate the status of error flags and output either a confirmation message or error notice
-    if (nameError === false && emailError === false && messageError === false)
+    if (nameError === false && emailError === false && phoneError === false && messageError === false)
     {
         clearErrors();        
         document.getElementById('submitconfirm').innerHTML = 'Thank you for your comments.';
