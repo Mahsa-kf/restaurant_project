@@ -59,25 +59,85 @@
         </div>
         <div class="main-container">
           <main>
-<!--VVVVV ADD YOUR UNIQUE PAGE CONTENT  VVVVV-->
-<!--Image are obtained from PowerPoint sources : This Photo by Unknown Author is licensed under CC BY-NC-->
-            <div class="special-banner">
-                <div>
-                    <h2>Sepcial Menu</h2>
-                </div>
-            </div>
-            <div id ="specials">
-              <div>
-                <img class="mySlides" src="images/Special1.JPG" alt="Lunch Special">
-              </div>
-              <div>
-                 <img class="mySlides" src="images/Special2.JPG" alt="Daily Special">
-               </div>
-              <div>
-                 <img class="mySlides" src="images/Special3.JPG" alt="Birthday Special">
-              </div>
-            </div>
-<!--VVVVV END OF UNIQUE PAGE CONTENT  VVVVV-->
+            <div class="main-container">
+                <main  id= "menu" class="menu-bg">
+                    <div class="menu-banner main-top-margin">
+                        <div>
+                            <h2>Sepcials</h2>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openMenus(event, 'lunch')">Lunch</button>
+                        <button class="tablinks" onclick="openMenus(event, 'daily')">Daily</button>
+                        <button class="tablinks" onclick="openMenus(event, 'birthday')">Birthday</button>
+                    </div>
+                    
+                    <div id="lunch" class="tabcontent">
+                        <section class="menu-container">
+                            <div class="menu-section-container">
+                           
+                                <h3>Lunch Special</h3>
+                                <p>start from 11am and end at 3pm</p>
+
+                                <p><strong>Pasta Lunch</strong></p>
+                                
+                                <p>Get any pasta with choice of soup of the day or side salad for only $18.95.
+                                </p>
+                                
+                                <p><strong>Pizza Lunch</strong></p>
+                                
+                                <p>Get any pizza with choice of soup of the day or side salad for only $19.95.</p>     
+                            </div>
+                            <div class="menu-section-container">
+                                <img src="images/bruna-branco-t8hTmte4O_g-unsplash.jpg" alt="Cabonara Pasta">
+                                 <!-- Image by Bruna Branco on Unsplash -->
+                            </div>
+                       
+                        </section>
+                    </div>   
+                    <div id="daily" class="tabcontent">
+                        <section class="menu-container">
+                        
+                            <div class="menu-section-container">
+                                <h3>Daily Special</h3>
+                                <p><strong>Wine Mondays</strong></p>
+                                
+                                <p>Get wine bottle for 1/2 price every Monday.</p>
+                                
+                                <p><strong>Pizza Tuesdays</strong></p>
+                                
+                                <p>Select any pizza from our menu for only $14.95 every Tuesday.</p>
+                                
+                                <p><strong>Pasta Wenesdays</strong></p>
+                                
+                                <p>Select any pizza from our menu for only $12.95 every Wednesday. </p>
+
+                                <p><strong>Dessert Thursdays</strong></p>
+                                
+                                <p>Get free dessert when ordering a main course every Thursday.</p>
+                                
+                            </div>
+                            <div class="menu-section-container">
+                                <img src="images/brett-jordan-Lrc75ClPxkg-unsplash.jpg" alt="Bottle of Wine">
+                                <!-- Image by Brett Jordan on Unsplash  -->
+                            </div>
+                        
+                        </section>
+                    </div> 
+                    <div id="birthday" class="tabcontent">
+                        <section class="menu-container">
+                        
+                            <div class="menu-section-container">
+                                <h3>Birthday Special</h3>
+                                <p><strong>Don’t forget to visit us on your birthday !</strong></p>
+                                <p><strong>Get a free dessert or an appetizer !</strong></p> 
+                            </div>
+                            <div class="menu-section-container">
+                                <img src="images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg" alt="Mix of dessets on a plate">
+                                 <!-- Image Photo by TYLER COLEMAN from unsplash -->
+                            </div>
+                        </section>
+                    </div>
           </main>
         </div>
           <footer>
