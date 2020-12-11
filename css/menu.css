@@ -43,11 +43,9 @@
     height: auto;
     margin: 50px auto;
     padding-bottom: 50px;
-    display: flex;
-    
-    
-   
+    display: flex; 
 }
+
 .menu-section-container{
     width: 45%;
     margin: 0 auto;

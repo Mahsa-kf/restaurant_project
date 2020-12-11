@@ -4,6 +4,41 @@
     margin: 0 auto;
     background-color: #FAFAF8;
 }
+.sitemap-banner{
+    width: 100%;
+    height: 350px;
+    background-image:url("../images/sitemapBg.jpg");
+    /* Image by Christo Anestev from Pixabay */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.sitemap-banner::after {
+  content: '';
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sitemap-banner h2{
+    margin: 0;
+    padding: .2em;
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    top: 50%;
+    z-index: 1;
+}
+
 
 
 .site-map-content-box {
