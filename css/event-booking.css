@@ -88,8 +88,17 @@ input, select, textarea {
 
 
 .ui-datepicker-calendar{
-    background-color: #fff;
+    background-color:#FFF;
+
+   
 }
+.showdate {
+    position: relative; 
+    z-index:100;
+    width: 20%;
+
+}
+
 
 .submit-div {
     width: 50%;

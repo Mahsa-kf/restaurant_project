@@ -1,5 +1,19 @@
 //Set date picker on eventDate field
-$('#eventDate').datepicker(); 
+//$(function () {
+//   $("#eventDate").datepicker();
+    
+//});
+
+$('#eventDate').datepicker({
+    beforeShow: function (textbox, instance) {   
+    instance.dpDiv.css({
+        marginTop: (-textbox.offsetHeight) + 'px',
+        marginLeft: textbox.offsetWidth + 'px'
+    });
+    }
+});
+
+
 
 //Set up listener on submit button
 document.getElementById("submit_btn").addEventListener("click", function(){
