@@ -189,6 +189,22 @@ a{
 }
 
 
+/****** Form submit button ******/
+#submit_btn {
+  font-size: 1.2em;
+  width: 50%;
+  padding: 0.6em;
+  background-color: #901100;
+  color: #fff;
+  border: none;
+}
+
+#submit_btn:hover {
+  background-color: #000;
+}
+
+
+
 
 /*FOOTER & COPYRIGHT*/
 footer{
