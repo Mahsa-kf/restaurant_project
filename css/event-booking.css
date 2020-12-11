@@ -34,7 +34,6 @@
 }
 
 
-
 .reqstar {
     color: red;
 }
@@ -46,3 +45,45 @@
 #submitconfirm {
     font-size: 1.25em;
 }
+
+span {
+    margin-left: 0.5em;
+    color: red;
+    font-size: 0.8em;
+  }
+  
+  .form-container {
+    padding-top: 2em;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+  
+  form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  label {
+    font-size: 1.3em;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 0.2em;
+    font-size: 1.1em;
+  }
+
+  .submit-div {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding-top: 2em;
+  }
+  #submit_btn {
+    font-size: 1.2em;
+    width: 50%;
+    padding: 0.2em;
+  }
+
+ 
+  

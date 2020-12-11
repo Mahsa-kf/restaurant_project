@@ -1,8 +1,8 @@
 //Set date picker on eventDate field
-$('#eventDate').datepicker();
+//$('#eventDate').datepicker(); Replace with HTML input type = "date"
 
 //Set up listener on submit button
-document.getElementById("submitbtn").addEventListener("click", function(){
+document.getElementById("submit_btn").addEventListener("click", function(){
 
     //Declare variables
     const name = document.getElementById("name");

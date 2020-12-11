@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/global.css">
-        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-        <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
-        <script defer type="text/javascript" src="js/event-booking.js"></script>
-        <link rel="stylesheet" href="css/event-booking.css" />
+        <link rel="stylesheet" href="./css/global.css">
+        <script type="text/javascript" src="./js/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="./js/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script defer type="text/javascript" src="./js/event-booking.js"></script>
+        <link rel="stylesheet" href="./css/event-booking.css" />
         <title>Event Booking</title>
     </head>
     <body>
@@ -68,47 +68,46 @@
             <div class="form-container" id ="events">
                 <form>
                     <div>
-                        <label for="name">Customer name: <span class="reqstar">*</span></label>
-                        <input type="text" id="name" name="name" />
-                        <span class="helpspan" id="namehelp"></span>    
+                        <div><label for="name">Customer name: <span class="reqstar">*</span></label></div>
+                        <div><input type="text" id="name" name="name" /></div>
+                        <div><span class="helpspan" id="namehelp"></span></div>    
                     </div>
                     <div>
-                        <label for="email">Customer email: <span class="reqstar">*</span></label>
-                        <input type="email" id="email" name="email" />
-                        <span class="helpspan" id="emailhelp"></span> 
+                        <div><label for="email">Customer email: <span class="reqstar">*</span></label></div>
+                        <div><input type="email" id="email" name="email" /></div>
+                        <div><span class="helpspan" id="emailhelp"></span></div> 
                     </div> 
                     <div>
-                        <label for="phone">Customer phone number: <span class="reqstar">*</span></label>
-                        <input type="text" id="phone" name="phone" />
-                        <span class="helpspan" id="phonehelp"></span>
+                        <div><label for="phone">Customer phone number: <span class="reqstar">*</span></label></div>
+                        <div><input type="text" id="phone" name="phone" /></div>
+                        <div><span class="helpspan" id="phonehelp"></span></div>
                     </div>
                     <div>
-                        <label for="eventType">Event type: <span class="reqstar">*</span></label>
-                        <select id="eventType" name="eventType">
+                        <div><label for="eventType">Event type: <span class="reqstar">*</span></label></div>
+                        <div><select id="eventType" name="eventType">
                             <option value="none">=== SELECT ONE ===</option>
                             <option value="wedding">Wedding</option>
                             <option value="anniversary">Anniversary</option>
                             <option value="gathering">Family Gathering</option>
                             <option value="corporate">Corporate Function</option>
                             <option value="other">Other (describe below)</option>
-                        </select>
-                        <span class="helpspan" id="eventhelp"></span>
+                        </select></div>
+                        <div><span class="helpspan" id="eventhelp"></span></div>
                     </div>
                     <div>
-                        <label for="eventDate">Event date: <span class="reqstar">*</span></label>
-                        <input id="eventDate" type="text" name="eventDime" placeholder="mm/dd/yyyy">
-                        <span class="helpspan" id="eventdatehelp"></span>
-                    </div>
+                        <div><label for="eventDate">Event date: <span class="reqstar">*</span></label></div>
+                        <div><input id="eventDate" type="date" name="eventDime" placeholder="mm/dd/yyyy"></div>
+                        <div><span class="helpspan" id="eventdatehelp"></span></div>
+                        <div>
                     <div>
-                        <label for="bookingDetails">Booking details: <span class="reqstar">*</span></label>
-                        <textarea id="bookingDetails" name="bookingDetails" placeholder=""></textarea>
-                        <span class="helpspan" id="bookinghelp"></span> 
+                        <div><label for="bookingDetails">Booking details: <span class="reqstar">*</span></label></div>
+                        <div><textarea name="bookingDetails" id="bookingDetails" cols="30" rows="10" placeholder=""></textarea></div>
+                        <div><span class="helpspan" id="bookinghelp"></span></div> 
                     </div>
-                    <div>
+                    <div class="submit-div">
                         <button id="submit_btn" type="button">Submit</button>
                     </div>
                 </form>
-        
                 <p id="submitconfirm"></p>
            </div>
 

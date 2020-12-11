@@ -70,8 +70,10 @@ span {
 }
 
 .form-container {
+  padding-top: 2em;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 1em;
 }
 
 form {
