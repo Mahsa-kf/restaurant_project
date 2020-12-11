@@ -1,0 +1,109 @@
+.about-banner{
+    width: 100%;
+    height: 350px;
+    background-image:url("../images/pexels-chan-walrus-941861.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.about-banner::after {
+  content: '';
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.about-banner h2{
+    margin: 0;
+    padding: .2em;
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    top: 50%;
+    z-index: 1;
+}
+
+.about-container{
+    width: 100%;
+    height: auto;
+    background-color: #F7F7F7;
+    padding-bottom: 50px;
+/*    background-color: #FAFAF8;*/
+}
+
+.about-section-container{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.about-description{
+    position: absolute;
+    top: 8em;
+    left: 5em;
+    width: 45%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 1;
+/*    padding: 5em;*/
+}
+
+.chef-imges img, .concept-img img{
+    position: absolute;
+    top: 5em;
+    right: 5em;
+    width: 50%;
+    height: 400px;
+   object-fit: cover;
+}
+
+.about-description2{
+    position: absolute;
+    top: 8em;
+    right: 5em;
+    width: 45%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 1;
+/*    padding: 5em;*/
+}
+.about-img img{
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    width: 50%;
+    height: 400px;
+   object-fit: cover;
+}
+
+
+.aboutBg-white{
+    background-color: rgba(255, 255, 255, 1);
+
+    padding: 40px 60px;
+/*    outline: solid 0.25em #837A3A;
+    outline-offset: -1.2em;
+*/
+     -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3)
+}
+
+
+
+
+
+
+
+
+
