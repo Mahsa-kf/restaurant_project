@@ -200,9 +200,6 @@ footer{
   display: flex;
 }
 
-.footer-navContainer::after{
-  border-bottom: 1px solid #fff;
-}
 
 .footer-navContainer div{
   margin-right: 40px;
@@ -219,7 +216,7 @@ footer ul li{
 
 footer div ul li:first-child{
   margin-bottom: 10px;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .right{
@@ -253,6 +250,6 @@ footer a:hover{
   display: block;
   content: '';
   font-size: 2px;
-  border: solid 1px #fff;
+  border: solid 1px #837A3A;
   margin: 10px auto;
 }
