@@ -1,7 +1,8 @@
 .location-banner{
     width: 100%;
     height: 350px;
-    background-image:url("../images/georgia-de-lotz-49w9ogvp5_4-unsplash.jpg");
+    /* image by <<Source: https://p0.pikist.com/photos/759/506/italy-venice-europe-architecture-buildings-street-old-city-old-city.jpg>> */
+    background-image:url("../images/aroma-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
