@@ -53,7 +53,10 @@ document.getElementById("submit_btn").addEventListener("click", function(){
     //Evaluate the status of error flags and output either a confirmation message or error notice
     if (nameError === false && emailError === false && messageError === false)
     {
-        clearErrors();        
+        clearErrors();  
+
+       
+        document.getElementById("contact-us-form").style.display ="none";
         document.getElementById('submitconfirm').innerHTML = 'Thank you for your comments.';
     }
     else
