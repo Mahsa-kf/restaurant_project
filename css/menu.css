@@ -7,10 +7,10 @@
 .menu-banner{
     width: 100%;
     height: 350px;
-    /* Images by Alejandra Gonzalez from Unsplash */
-    background-image:url("../images/twoPizzas.jpg");
+    /* Images by RitaE / 2734 images from Pixabay */
+    background-image:url("../images/menu.jpg");
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center center;
     background-size: cover;
     position: relative;
 }
