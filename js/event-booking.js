@@ -107,7 +107,10 @@ document.getElementById("submit_btn").addEventListener("click", function(){
     if (nameError === false && emailError === false && phoneError === false && eventError === false && eventDateError === false && detailsError === false)
     {
         clearErrors();        
+        document.getElementById("events").style.display ="none";
+        document.getElementsByClassName("submit_container")[0].style.display ="block";
         document.getElementById('submitconfirm').innerHTML = 'Thank you for your inquiry. A staff member will contact you shortly.';
+       
     }
     else
         {
