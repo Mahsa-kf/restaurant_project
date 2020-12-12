@@ -58,6 +58,7 @@ document.getElementById("submit_btn").addEventListener("click", function(){
 
        
         document.getElementById("contact-us-form").style.display ="none";
+        document.getElementsByClassName("submit_container")[0].style.display ="block";
         document.getElementById('submitconfirm').innerHTML = 'Thank you for your comments.';
     }
     else
