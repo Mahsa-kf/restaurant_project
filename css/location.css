@@ -1,9 +1,9 @@
 .location-banner{
     width: 100%;
     height: 350px;
-    background-image:url("../images/pexels-chan-walrus-941861.jpg");
+    background-image:url("../images/georgia-de-lotz-49w9ogvp5_4-unsplash.jpg");
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center;
     background-size: cover;
     position: relative;
 }
