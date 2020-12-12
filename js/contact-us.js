@@ -7,12 +7,12 @@ document.getElementById("submit_btn").addEventListener("click", function(){
     const phone = document.getElementById("phone");
     const message = document.getElementById("message");
     const emailRegex = /\w+@\w+\.\w+/;
-    const phoneRegex = /^\(?\d{3}\)?(-|\s)?\d{3}(-|\s)?\d{4}$/;
+    const phoneRegex = /^\(?\d{3}\)?(-|\s)?\d{3}(-|\s)?\d{4}$/; //phoneRegex retained for future functionality expansion if needed
     let nameError = false;
     let emailError = false;
     let messageError = false;
 
-    //Clear any previous error messages
+    //Create function to clear any previous error messages
     function clearErrors(){
         name.style.borderColor = 'black';
         email.style.borderColor = 'black';
@@ -24,6 +24,7 @@ document.getElementById("submit_btn").addEventListener("click", function(){
         document.getElementById('submitconfirm').innerHTML = '';        
     }
 
+    //Call function to clear previous error messages
     clearErrors();
 
     //Validate name input

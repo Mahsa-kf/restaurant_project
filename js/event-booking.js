@@ -35,7 +35,7 @@ document.getElementById("submit_btn").addEventListener("click", function(){
     let eventDateError = false;
     let detailsError = false;
 
-    //Clear any previous error messages
+    //Create function to clear any previous error messages
     function clearErrors(){
         name.style.borderColor = 'black';
         email.style.borderColor = 'black';
@@ -52,6 +52,7 @@ document.getElementById("submit_btn").addEventListener("click", function(){
         document.getElementById('submitconfirm').innerHTML = '';        
     }
 
+    //Call function to clear previous error messages
     clearErrors();
 
     //Validate name input
