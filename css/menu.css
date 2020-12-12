@@ -7,7 +7,8 @@
 .menu-banner{
     width: 100%;
     height: 350px;
-    background-image:url("../images/alejandra-cifre-gonzalez-34B36bGmQlc-unsplash.jpg");
+    /* Images by Alejandra Gonzalez from Unsplash */
+    background-image:url("../images/twoPizzas.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
