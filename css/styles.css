@@ -192,6 +192,7 @@ a{
 }
 
 .hero{
+    /* image by <<Source: https://p0.pikist.com/photos/759/506/italy-venice-europe-architecture-buildings-street-old-city-old-city.jpg>> */
     background-image: url("../images/aroma-hero.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -220,7 +221,8 @@ a{
 }
 
 .main-about{
-    background-image: url("../images//about_bg.jpg");
+    /* Created by Miho */
+    background-image: url("../images/about_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,7 +260,6 @@ a{
     transform: translate(-50%); 
     background-color: #837A3A;
 }
-
 
 .main-about p{
     font-size: 18px;
@@ -319,19 +320,6 @@ a{
    object-fit: cover;
 }
 
-.home-event-bg{
-    background-image: url("../images/NG-Studio0012.jpg");
-/*    background-image: url(/images/Toscana-banquet.jpg);*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
-    position: relative;
-}
-
-
 .home-event-bg div{
     position:absolute;
     width: 60%;
@@ -345,7 +333,8 @@ a{
 }
 
 .contest{
-    background-image: url("../images/alejandra-cifre-gonzalez-34B36bGmQlc-unsplash.jpg");
+    /* Images by Alejandra Gonzalez from Unsplash */
+    background-image: url("../images/twoPizzas.jpg");
     background-attachment: fixed;
     background-position:bottom center;
     background-repeat: no-repeat;
