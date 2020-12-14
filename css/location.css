@@ -36,18 +36,90 @@
 /* MAIN*/
 main {
     margin: 0 auto;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
 }
 
+.content-shadow-box {
+    padding: 40px 10px  ;
+    margin: 6em 10%;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+    background-color: white;
+}
+.location-desc{
+    font-size: 1.4em;
+    text-align: left;
+}
 #map {
     height: 300px;
-    width: 46%;
+    width: 53%;
     position: absolute;
-    right: 1em;
+    right: 2em;
     top: 0;
 }
 
-.coloring {
+.location-title {
+    font-size: 1.6em;
+    text-align: left;
+    margin-left: 0em;
+
+}
+
+a{
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #901100;
+}
+
+.bookNow {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    top: 1em;
+}
+
+
+#location-maps {
+    position: relative;
+    /*max-width: 100%;*/
+    height: auto;
+}
+
+#location-maps h2 {
+    margin: 0;
+}
+
+.locationDetails h3 {
+    text-decoration: underline;
+    font-style: normal;
+    padding-left: -1em;
+    padding: 0;
+    margin: 0;
+}
+
+.locationDetails {
+    width: 50%;
+    height: 300px;
+    margin-bottom: 2em;
+    color:black;
+}
+
+
+.bold {
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+/*.line {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 2em;
+}*/
+
+/*.coloring {
     color:white;
     background-color:  #901100;
 }
@@ -60,50 +132,14 @@ main {
     border: none;
 }
 
-#userReserveNow {
+/*#userReserveNow {
     position: relative;
     left: 8em;
     top: 1em;
-}
-
-#location-maps {
-    position: relative;
-    margin-top: 4em;
-    /*max-width: 100%;*/
-    height: auto;
-}
-
-    #location-maps h2 {
-        margin: 0;
-    }
-
-.line {
-    width: 100%;
-    border-bottom: 1px solid black;
-    margin-bottom: 2em;
-}
-
-.background {
-    /*background-image: 
-    url(../images/jordi-pujadas-MHzYnDM34IQ-unsplash.jpg);
-    background-image: url(../images/logo2.png);
-    transform: rotate(-30deg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;*/
-    background-color: #901100;
-}
-
-.locationDetails {
-    width: 43%;
-    height: 300px;
-    margin-left: 1em;
-    margin-bottom: 2em;
-    color:black;
-}
+}*/
 
 
-.locationDetails p {
+/*.locationDetails p {
     margin: 9px;
 }
 
@@ -113,29 +149,11 @@ main {
 
 .bookNow p:last-of-type {
     margin-bottom: 1em;
-}
+}*/
 
-.locationDetails h2 {
-    text-decoration: underline;
-    font-style: normal;
-}
 
-.bookNow {
-    position: relative;
-    margin: 0 auto;
-    width: 80%;
-    top: 1em;
-}
 
-.bold {
-    font-weight: bolder;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.restaurant h2 {
+/*.restaurant h2 {
     margin: 0;
     position: relative;
     right: 4.4em;
@@ -152,4 +170,4 @@ main {
 
 .bookTable {
     display: none;
-}
+}*/
