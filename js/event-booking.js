@@ -1,17 +1,19 @@
 //Set date picker on eventDate field
-$(function () {
-   $("#eventDate").datepicker();
-    
-});
+//$(function () {
+//   $("#eventDate").datepicker();   
+//});// this code will cause date picker overlap the input field.
+
+
+//To solve issue to let datepicker showed on right side of the input field, decide to use the code below.
 //code reference from http://burnignorance.com/javascript-performance-tips/make-jquery-datepicker-to-popup-in-different-positions/
-//$('#eventDate').datepicker({
-//    beforeShow: function (textbox, instance) {
-//           instance.dpDiv.css({
-//            marginTop: (-textbox.offsetHeight) + 'px',
-//            marginLeft: textbox.offsetWidth + 'px'
-//        });
-//    }
-//});
+$('#eventDate').datepicker({
+    beforeShow: function (textbox, instance) {
+           instance.dpDiv.css({
+            marginTop: (-textbox.offsetHeight) + 'px',
+            marginLeft: textbox.offsetWidth + 'px'
+        });
+    }
+});
 
 
 //Set up listener on submit button
