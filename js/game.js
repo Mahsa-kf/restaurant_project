@@ -60,9 +60,7 @@ function shuffle (array){
 function choose(pizza){
  
     var source = $(event.target).attr('id');
-    console.log(source);
     var target = document.getElementById(source);
-    console.log(target.src);
     //Check to see if the user clicks on image more than once
     if(target.src.endsWith(joker) == false) {
         errorMessages.innerText = "You can click on the image only once";
@@ -85,7 +83,6 @@ function choose(pizza){
             //The user has only 3 guesses.
             noofGuesses = noofGuesses + 1;
             //Setting the source of the selected image
-            //document.images[pizza].src = tempPizzaArray[pizza];
             target.src = tempPizzaArray[pizza];
             //Delete the image from the temporary Array to shuffle it
             delete tempPizzaArray[pizza];
@@ -106,7 +103,6 @@ function choose(pizza){
                 shuffle(tempPizzaArray);
 
             }
-            //document.images[pizza].src = tempPizzaArray[pizza];
             target.src = tempPizzaArray[pizza];
             delete tempPizzaArray[pizza];
             var fileName = displayPizzaName(target.src);//displayPizzaName(document.images[pizza].src);
@@ -130,14 +126,8 @@ function choose(pizza){
         }
         console.log(notClicked);
         
-        //var thing = choose(notClicked).src;
-        //console.log(thing);
         thing = document.getElement;
-        console.log(thing);
-        //document.images[notClicked].src = specialPizza;
         document.getElementById(notClicked).src = specialPizza;
-        //target.src = specialPizza;
-        //var parent = document.images[notClicked].parentElement; 
         var parent = document.getElementById(notClicked).parentElement;  
         parent.classList.add("addborder");
         //disable clicks untill refresh
