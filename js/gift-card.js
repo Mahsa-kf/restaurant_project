@@ -38,6 +38,7 @@ function processForm() {
 	}
 }
 
+//FORM VALIDATION FOR EACH FIELDS
 function validateGeneral() {
 	var flag = true;
 	if(f_Amount.value === "amount-0"){
@@ -79,6 +80,7 @@ function validateGeneral() {
 	return flag;
 }
 
+//IF ALL FORMS FIELDS VALID, SHOW THE MESSAGE
 function showThankYou() {
 	form_container.style.display="none";
 	submit_container[0].style.display="block";
