@@ -1,0 +1,114 @@
+.contest-banner{
+    width: 100%;
+    height: 350px;
+    background-image:url("../images/getulio-moraes.jpg");
+    background-repeat: round;
+    background-position: center right;
+    background-size: cover;
+    position: relative;
+}
+
+.contest-banner::after {
+  content: '';
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.contest-banner h2{
+    margin: 0;
+    padding: .2em;
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    top: 50%;
+    z-index: 1;
+}
+
+.contest-container{
+ max-width: 1200px;
+ margin: 0 auto;
+ height: 600px;
+}
+
+.coloring {
+    color: white;
+    background-color: #901100;
+}
+
+#playButton{
+    position: relative;
+    left: 11em;
+    top: 7em;
+}
+
+.likebutton {
+    padding: 1em 1em 1em;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1;
+    border: none;
+}
+
+.game-details {
+float: left;
+width: 50%;;
+height: 20em;
+position: relative;
+top: 2em;
+border: 2px solid  black;
+}
+
+.game-details h3 {
+    font-style: normal;
+    color: white;
+    background-color:  #901100;
+    width: 80%;
+    height: 3em;;
+    margin: 0 auto;
+    padding-top: 13px;
+}
+
+.game-details p {
+    margin-left: 1em;
+}
+
+.pizza-container {
+    float: right;
+    width: 50%;
+    height: 20em;
+    position: relative;
+    top: 2em;
+    padding-left: 2em;
+}
+
+.pizza-container p {
+margin-top: 0;
+}
+
+#gamediv{
+    border: 2px solid  #901100;
+    float: left;
+    margin-right: 2em;
+    width: 16em;
+    height: 16em;
+}
+
+#gamediv img:hover{
+    border : 2px solid gold;
+}
+.pizza{
+    height: 8em;
+    width: 8em;
+}
+
+.addborder {
+    border: 2px solid red;;
+}
