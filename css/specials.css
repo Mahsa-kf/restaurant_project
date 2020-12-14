@@ -86,7 +86,7 @@ bottom: 0;
 }
 
 
-.tab button.active {
+.tab button:focus {
   background-color: #f1f1f1;
 }
 
