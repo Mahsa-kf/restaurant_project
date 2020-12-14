@@ -2,8 +2,9 @@
     width: 100%;
     height: 350px;
     background-image:url("../images/getulio-moraes.jpg");
-    background-repeat: round;
-    background-position: center right;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -150px;
     background-size: cover;
     position: relative;
 }
