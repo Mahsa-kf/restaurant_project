@@ -34,27 +34,26 @@
 }
 
 /* MAIN*/
-#main {
+main {
     margin: 0 auto;
-    /*max-width: 1200px;*/
+    max-width: 1200px;
 }
 
 #map {
     height: 300px;
     width: 46%;
-    position: relative;
-    float: right;
-    top: -20.8em;
+    position: absolute;
     right: 1em;
+    top: 0;
 }
 
 .coloring {
-    color: #901100;
-    background-color: white;
+    color:white;
+    background-color:  #901100;
 }
 
 .likebutton {
-    padding: 1em 1em 1em;
+    padding: 10px;
     text-align: center;
     cursor: pointer;
     line-height: 1;
@@ -100,12 +99,13 @@
     height: 300px;
     margin-left: 1em;
     margin-bottom: 2em;
-    color: white;
+    color:black;
 }
 
-    .locationDetails p {
-        margin: 0;
-    }
+
+.locationDetails p {
+    margin: 9px;
+}
 
 .bookNow p:first-of-type {
     margin-top: 1em;
@@ -140,7 +140,6 @@
     position: relative;
     right: 4.4em;
     text-transform: none;
-    font-style: normal;
 }
 
 .restaurant h3 {
