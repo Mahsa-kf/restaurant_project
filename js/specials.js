@@ -1,30 +1,41 @@
-
 window.onload = function(){
 
-  document.getElementById('lunch').style.display = "block";
+	document.getElementById('lunch').style.display = "block";
+	
+	//Declares variables
+	  var lunch_btn = document.getElementById("lunch_btn");
+		var daily_btn = document.getElementById("daily_btn");
+		var birthday_btn = document.getElementById("birthday_btn");
+		var lunch = document.getElementById("lunch");
+		var daily = document.getElementById("daily");
+		var birthday = document.getElementById("birthday");
 
 
-}
+// Set Up Listener onclick buttons
+		lunch_btn.addEventListener("click", lunchShow);
+		daily_btn.addEventListener("click", dailyShow);
+		birthday_btn.addEventListener("click", birthdayShow);
 
-function openMenus(evt, menuItem) {
-// Declare all variables
-var i;
-var tabcontent;
-var tablinks;
+//Create Functions
 
-// Get all elements with class="tabcontent" and hide them
-tabcontent = document.getElementsByClassName("tabcontent");
-for (i = 0; i < tabcontent.length; i++) {
-  tabcontent[i].style.display = "none";
-}
+	function lunchShow() {
+		lunch.style.display = "block"
+		daily.style.display = "none"
+		birthday.style.display = "none"
+	}
 
-// Get all elements with class="tablinks" and remove the class "active"
-tablinks = document.getElementsByClassName("tablinks");
-for (i = 0; i < tablinks.length; i++) {
-  tablinks[i].className = tablinks[i].className.replace(" active", "");
-}
+	function dailyShow() {
+		lunch.style.display = "none"
+		daily.style.display = "block"
+		birthday.style.display = "none"
+	}
 
-// Show the current tab, and add an "active" class to the button that opened the tab
-document.getElementById(menuItem).style.display = "block";
-evt.currentTarget.className += " active";
-}
+	function birthdayShow() {
+		lunch.style.display = "none"
+		daily.style.display = "none"
+		birthday.style.display = "block"
+	}
+
+};//End of Onload Function
+
+

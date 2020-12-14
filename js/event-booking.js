@@ -1,8 +1,21 @@
 //Set date picker on eventDate field
-$('#eventDate').datepicker(); 
+//$(function () {
+//   $("#eventDate").datepicker();
+    
+//});
+//code reference from http://burnignorance.com/javascript-performance-tips/make-jquery-datepicker-to-popup-in-different-positions/
+$('#eventDate').datepicker({
+    beforeShow: function (textbox, instance) {
+           instance.dpDiv.css({
+            marginTop: (-textbox.offsetHeight) + 'px',
+            marginLeft: textbox.offsetWidth + 'px'
+        });
+    }
+});
+
 
 //Set up listener on submit button
-document.getElementById("submit_btn").addEventListener("click", function(){
+document.getElementById("submit_btn").addEventListener("click", function() {
 
     //Declare variables
     const name = document.getElementById("name");
@@ -21,8 +34,8 @@ document.getElementById("submit_btn").addEventListener("click", function(){
     let eventDateError = false;
     let detailsError = false;
 
-    //Clear any previous error messages
-    function clearErrors(){
+    //Create function to clear any previous error messages
+    function clearErrors() {
         name.style.borderColor = 'black';
         email.style.borderColor = 'black';
         phone.style.borderColor = 'black';
@@ -38,65 +51,60 @@ document.getElementById("submit_btn").addEventListener("click", function(){
         document.getElementById('submitconfirm').innerHTML = '';        
     }
 
+    //Call function to clear previous error messages
     clearErrors();
 
     //Validate name input
-    if (name.value === '')
-    {
+    if (name.value === '') {
         nameError = true;
         name.style.borderColor = 'red';
         document.getElementById('namehelp').innerHTML = 'Please enter your name';
     }
 
     //Validate email input
-    if (!emailRegex.test(email.value))
-    {
+    if (!emailRegex.test(email.value)) {
         emailError = true;
         email.style.borderColor = 'red';
         document.getElementById('emailhelp').innerHTML = 'Please enter your email address';
     }
 
     //Validate phone input
-    if (!phoneRegex.test(phone.value))
-    {
+    if (!phoneRegex.test(phone.value)) {
         phoneError = true;
         phone.style.borderColor = 'red';
         document.getElementById('phonehelp').innerHTML = 'Please enter your phone number';
     }
 
     //Validate event type input
-    if (event.value === 'none')
-    {
+    if (event.value === 'none') {
         eventError = true;
         event.style.borderColor = 'red';
         document.getElementById('eventhelp').innerHTML = 'Please select an event type';
     }
 
     //Validate booking date input
-    if (!dateRegex.test(eventDate.value))
-    {
+    if (!dateRegex.test(eventDate.value)) {
         eventDateError = true;
         eventDate.style.borderColor = 'red';
         document.getElementById('eventdatehelp').innerHTML = 'Please enter your booking date';
     }
 
     //Validate booking details
-    if (details.value === '')
-    {
+    if (details.value === '') {
         detailsError = true;
         details.style.borderColor = 'red';
         document.getElementById('bookinghelp').innerHTML = 'Please tell us about your event or function';
     } 
 
     //Evaluate the status of error flags and output either a confirmation message or error notice
-    if (nameError === false && emailError === false && phoneError === false && eventError === false && eventDateError === false && detailsError === false)
-    {
+    if (!nameError && !emailError && !phoneError && !eventError && 
+            !eventDateError && !detailsError) {
         clearErrors();        
+        document.getElementById("events").style.display ="none";
+        document.getElementsByClassName("submit_container")[0].style.display ="block";
         document.getElementById('submitconfirm').innerHTML = 'Thank you for your inquiry. A staff member will contact you shortly.';
+    } else {
+        document.getElementById('submitconfirm').innerHTML = 'Your form was not submitted. Please provide the necessary information and resubmit.';
     }
-    else
-        {
-            document.getElementById('submitconfirm').innerHTML = 'Your form was not submitted. Please provide the necessary information and resubmit.';
-        }
 
-    });
+});

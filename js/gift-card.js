@@ -1,11 +1,10 @@
 window.onload = function(){
 	
 	//Declares variables
-		var thanks_msg = document.getElementById("thanks_msg");
+		var form_container = document.getElementById("giftCardForm");
+		var submit_container = document.getElementsByClassName("submit_container");
+		var submitconfirm = document.getElementById("thanks_msg");
 		var s_general = document.getElementById("general");
-		var s_shipping = document.getElementById("shipping");
-		var s_payment = document.getElementById("payment");
-		var s_billing = document.getElementById("billing");
 		var formHandle = document.forms.form_giftcard;
 		var f_Amount = document.getElementById("amount");
 		var f_Quantity = document.getElementById("quantity");
@@ -81,8 +80,10 @@ function validateGeneral() {
 }
 
 function showThankYou() {
-	thanks_msg.style.display="block";
-	thanks_msg.innerHTML= "Thank you <strong>" + f_Sender_Name.value + "</strong> for your purchase.<br/> Your total order is " + f_Quantity.value + " X $" + f_Amount.value + " = $" + (f_Quantity.value * f_Amount.value)+" . <br/>A confirmation email will be sent to <strong>" + f_sender_Email.value + "</strong> shortly.";
+	form_container.style.display="none";
+	submit_container[0].style.display="block";
+	submitconfirm.style.display="block";
+	submitconfirm.innerHTML= "Thank you <strong>" + f_Sender_Name.value + "</strong> for your purchase.<br/> Your total order is " + f_Quantity.value + " X $" + f_Amount.value + " = $" + (f_Quantity.value * f_Amount.value)+" . <br/>A confirmation email will be sent to <strong>" + f_sender_Email.value + "</strong> shortly.";
 	f_submit_btn.style.display="none";
 
 	return false;
