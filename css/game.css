@@ -73,6 +73,7 @@ top: 2em;
     right: 4em;
     top: -2.2em;
     float: right;
+    object-fit: cover;
 }
 .game-details h3 {
     font-style: normal;
@@ -114,6 +115,7 @@ margin-top: 0;
 .pizza{
     height: 8em;
     width: 8em;
+    object-fit: cover;
 }
 
 .addborder {
