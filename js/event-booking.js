@@ -1,17 +1,17 @@
 //Set date picker on eventDate field
-//$(function () {
-//   $("#eventDate").datepicker();
+$(function () {
+   $("#eventDate").datepicker();
     
-//});
-//code reference from http://burnignorance.com/javascript-performance-tips/make-jquery-datepicker-to-popup-in-different-positions/
-$('#eventDate').datepicker({
-    beforeShow: function (textbox, instance) {
-           instance.dpDiv.css({
-            marginTop: (-textbox.offsetHeight) + 'px',
-            marginLeft: textbox.offsetWidth + 'px'
-        });
-    }
 });
+//code reference from http://burnignorance.com/javascript-performance-tips/make-jquery-datepicker-to-popup-in-different-positions/
+//$('#eventDate').datepicker({
+//    beforeShow: function (textbox, instance) {
+//           instance.dpDiv.css({
+//            marginTop: (-textbox.offsetHeight) + 'px',
+//            marginLeft: textbox.offsetWidth + 'px'
+//        });
+//    }
+//});
 
 
 //Set up listener on submit button
