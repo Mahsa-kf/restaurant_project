@@ -1,6 +1,7 @@
 window.onload = function(){
 
 	document.getElementById('lunch').style.display = "block";
+	document.getElementById('lunch_btn').style.backgroundColor = "#f1f1f1";
 	
 	//Declares variables
 	  var lunch_btn = document.getElementById("lunch_btn");
@@ -19,18 +20,22 @@ window.onload = function(){
 //Create Functions
 
 	function lunchShow() {
+		document.getElementById('lunch_btn').style.backgroundColor = "#f1f1f1";
+
 		lunch.style.display = "block"
 		daily.style.display = "none"
 		birthday.style.display = "none"
 	}
 
 	function dailyShow() {
+		document.getElementById('lunch_btn').style.backgroundColor = "#ffffff";
 		lunch.style.display = "none"
 		daily.style.display = "block"
 		birthday.style.display = "none"
 	}
 
 	function birthdayShow() {
+		document.getElementById('lunch_btn').style.backgroundColor = "#ffffff";
 		lunch.style.display = "none"
 		daily.style.display = "none"
 		birthday.style.display = "block"
