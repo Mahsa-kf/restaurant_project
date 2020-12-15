@@ -1,16 +1,21 @@
 
 //Different Pizza images
 var pizza = [];
-pizza[0] = './images/cards/Pizza-al-Taglio.jpg';
-pizza[1] = './images/cards/pizza-alla-pala.jpg';
-pizza[2] = './images/cards/Pizza-Napoletana.jpg';
-pizza[3] = './images/cards/Pizza-Siciliana.jpg';
+//https://realitybakes.com/wp-content/uploads/2020/02/Pizza-al-Taglio2-1.jpg
+pizza[0] = './images/Pizza-al-Taglio.jpg';
+//https://www.eataly.ca/wp-content/uploads/2019/12/pizza-alla-pala.jpg
+pizza[1] = './images/Pizza-alla-Pala.jpg';
+//https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg
+pizza[2] = './images/Pizza-Napoletana.jpg';
+//https://myfoodbook.com.au/sites/default/files/styles/single_recipe/public/recipe_photo/Brev20145427_0.jpg?itok=j2d5iQBG
+pizza[3] = './images/Pizza-Siciliana.jpg';
 
 //Special Pizza for the Day
-var specialPizza = './images/cards/Pizza-al-Taglio.jpg';
+var specialPizza = './images/Pizza-al-Taglio.jpg';
 
 //Placeholder Image used
-var joker = '/images/cards/joker.png';
+//https://www.kitchenstories.com/en/recipes/original-italian-pizza
+var gameplaceholder = '/images/Game-Placeholder.png';
 
 //No of cards Flipped
 var noofGuesses = 0;
@@ -62,8 +67,9 @@ function choose(pizza){
     var source = $(event.target).attr('id');
     var target = document.getElementById(source);
     //Check to see if the user clicks on image more than once
-    if(target.src.endsWith(joker) == false) {
+    if(target.src.endsWith(gameplaceholder) == false) {
         errorMessages.innerText = "You can click on the image only once";
+        $("#errorMessages").show().delay(1000).fadeOut();
         return;
     }
 
@@ -87,7 +93,7 @@ function choose(pizza){
             //Delete the image from the temporary Array to shuffle it
             delete tempPizzaArray[pizza];
             //extract file name to show selected Pizza
-            var fileName = displayPizzaName(target.src);//displayPizzaName(document.images[pizza].src);
+            var fileName = displayPizzaName(target.src);
             fileName = fileName.toString();
             pizzaSelected.innerHTML = "You have clicked the wrong pizza : "+fileName;
 
@@ -105,7 +111,7 @@ function choose(pizza){
             }
             target.src = tempPizzaArray[pizza];
             delete tempPizzaArray[pizza];
-            var fileName = displayPizzaName(target.src);//displayPizzaName(document.images[pizza].src);
+            var fileName = displayPizzaName(target.src);
             fileName = fileName.toString();
             pizzaSelected.innerHTML = "You have clicked the wrong pizza : "+fileName;
 
@@ -124,9 +130,7 @@ function choose(pizza){
                 notClicked = i;
             }
         }
-        console.log(notClicked);
-        
-        thing = document.getElement;
+
         document.getElementById(notClicked).src = specialPizza;
         var parent = document.getElementById(notClicked).parentElement;  
         parent.classList.add("addborder");

@@ -99,7 +99,7 @@
 .collapsed-content {
     list-style-type: square;   
     padding-bottom: 10px;
-    display: "none";
+    display: none;
 }
 
 .collapsed-content li {
@@ -118,6 +118,7 @@
     background-color: #e0dddd;
     border-radius: 25px;
     padding: 1px;
+    transform: rotateX(180deg);
 }
 
 .collapse-btn:focus {

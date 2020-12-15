@@ -14,7 +14,7 @@ window.onload = function () {
         // Get the content of clicked item
         var collapsedContent = this.nextElementSibling;
 
-        if (collapsedContent.style.display == "none") {
+        if (collapsedContent.style.display === "none" || collapsedContent.style.display === "") {
             // Show collapse content
             collapsedContent.style.display = "block";
             this.children[1].style.transform = "none";
