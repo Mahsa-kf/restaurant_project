@@ -70,7 +70,7 @@ a{
 
 .nav-container{
     width: 95%;
-    height: 75px;
+    /* height: 75px; */
 /*    margin: 0.5em auto;*/
     background-color: #fff;
     position: fixed;
@@ -129,10 +129,15 @@ a{
    font-size: 18px;
 }
 
+#main-menu .reserve-btn {
+    float: right;
+}
+
 #main-menu .reserve-btn a{
     background-color: #901100;
     color: #fff;
     padding: 10px 15px;
+    float: right;
 }
 
 #main-menu .reserve-btn a:hover{
@@ -146,7 +151,7 @@ a{
     display:block;
     /*width:100%;*/
     margin:0;
-    padding:0.25em 0;
+    padding:0.25em 0 0 0;
     position:relative; 
 }
 
@@ -180,6 +185,7 @@ a{
 
 #site-name{
     text-align: center;
+    height: 70px;
 }
 
 #site-name img{

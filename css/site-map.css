@@ -2,7 +2,6 @@
  #901100 red
  #837A3A  gold */ 
 .site-map-container {
-    display: flex;
     position: relative;
     margin: 0 auto;
     font-size: 19px;
