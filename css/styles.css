@@ -116,6 +116,7 @@ a{
     display:inline-block;
     list-style-type:none;
     margin-right:2em;
+    padding: 10px 0;
 }
 
 #main-menu a{
@@ -131,6 +132,7 @@ a{
 
 #main-menu .reserve-btn {
     float: right;
+    padding: 0 !important;
 }
 
 #main-menu .reserve-btn a{
