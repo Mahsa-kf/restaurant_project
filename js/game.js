@@ -69,6 +69,7 @@ function choose(pizza){
     //Check to see if the user clicks on image more than once
     if(target.src.endsWith(gameplaceholder) == false) {
         errorMessages.innerText = "You can click on the image only once";
+        $("#errorMessages").show().delay(1000).fadeOut();
         return;
     }
 
