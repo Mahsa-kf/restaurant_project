@@ -22,12 +22,7 @@ h3 {
 
 .aboutBg-white{
     background-color: rgba(255, 255, 255, 1);
-
-    /* padding: 40px 60px; */
-/*    outline: solid 0.25em #837A3A;
-    outline-offset: -1.2em;
-*/
-     -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3); 
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3)
 }
 
@@ -35,6 +30,7 @@ h3 {
 .about-banner{
     width: 100%;
     height: 300px;
+    /* Images from https://images.squarespace-cdn.com/content/56a2785c69a91af45e06a188/1540568791962-ZC7N2KVWGDGMXHZY4DPO/Restaurant-Staff-Equipment.png?format=1500w&content-type=image%2Fpng */
     background-image:url("../images/career.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -53,7 +49,7 @@ h3 {
     bottom: 0;
   }
 
-  .about-banner h2{
+  .about-banner h1{
     margin: 0;
     padding: .2em;
     color: #FFF;

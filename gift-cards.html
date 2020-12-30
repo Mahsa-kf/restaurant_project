@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aroma Gift Card | Restaurant Gift Cards</title>
+  <title>Gift Cards | Aroma</title>
   <link rel="stylesheet" href="./CSS/gift-cards.css">
   <link rel="stylesheet" href="./CSS/global.css">
   <script type="text/javascript" src="./js/gift-card.js"></script>
@@ -15,55 +15,56 @@
   <div class="nav-container">
     <header id="header">
       <div id="site-name">
-        <h3 class="hidden">Aroma Ristorante</h3>
-        <a href="index.html">
-          <img src="./images/logo2.png" alt="Aroma logo">
-        </a>
+          <h3 class="hidden">Aroma Ristorante</h3>
+          <a href="index.html">
+            <img src="./images/logo2.png" alt="Aroma logo">
+          </a>
       </div>
       <div class="nav-bar">
-        <nav id="main-menu">
-          <h3 class="hidden">
-            Main navigation
-          </h3>
-          <ul>
-            <li id="sub-menu">
-              <a href="menu.html">Menus</a>
+          <nav id="main-menu">
+              <h3 class="hidden">
+                 Main navigation
+              </h3>
               <ul>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="specials.html">Special</a></li>
+                  <li class="reserve-btn">
+                      <a href="event-booking.html">Reservations</a>
+                  </li>
+                  <li id="sub-menu">
+                      <a href="menu.html">Menus</a>
+                       <ul>
+                          <li><a href="menu.html">Menu</a></li>
+                          <li><a href="specials.html">Special</a></li>
+                        </ul>
+                  </li>
+                   <li>
+                      <a href="about.html">About</a>
+                  </li>
+                   <li>
+                       <a href="event-booking.html">Events</a>
+                   </li>
+                   <li>
+                       <a href="location.html">Location</a>
+                   </li>
+                   <li>
+                       <a href="gift-cards.html">Gift cards</a>
+                   </li>
+                    <li>
+                       <a href="careers.html">Career</a>
+                   </li>
+                   <li>
+                       <a href="contact-us.html">Contact</a>
+                   </li>
+
               </ul>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="event-booking.html">Events</a>
-            </li>
-            <li>
-              <a href="location.html">Location</a>
-            </li>
-            <li>
-              <a href="gift-cards.html">Gift cards</a>
-            </li>
-            <li>
-              <a href="careers.html">Career</a>
-            </li>
-            <li>
-              <a href="contact-us.html">Contact</a>
-            </li>
-            <li class="reserve-btn">
-              <a href="event-booking.html">Reservations</a>
-            </li>
-          </ul>
-        </nav>
+          </nav>   
       </div>
-    </header>
+  </header>
   </div>
   <div class="main-container">
     <main>
       <div class="gift-banner ">
         <div>
-          <h2>Gift Cards</h2>
+          <h1>Gift Cards</h1>
         </div>
       </div>
       <div class="content-shadow-box">
@@ -72,7 +73,7 @@
         </div>
         <div class="form-container">
           <form action="#" method="post" id="giftCardForm" name="form_giftcard" onsubmit="return false">
-            <section id="general" class="page">
+            <div id="general" class="page">
               <div>
                 <div><label for="amount" class="labelName">Amount:</label></div>
                 <div>
@@ -119,13 +120,13 @@
                 <div><span class="helpspan" id="emailHelp"></span></div>
               </div>
               <div>
-                <div><label for="message" class="message" class="labelName">Message:</label></div>
+                <div><label for="message" class="message labelName">Message:</label></div>
                 <div><textarea name="message" id="message" cols="30" rows="8"
                     placeholder="Add your personal message here..."></textarea></div>
                 <div><span class="helpspan" id="messageHelp"></span></div>
                 <p class="message-limit">200 characters left (5 remaining lines)</p>
               </div>
-            </section>
+            </div>
             <div class="submit-div"><button id="submit_btn" type="button">Submit</button></div>
           </form>
         </div>

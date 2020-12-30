@@ -1,7 +1,8 @@
 .location-banner{
     width: 100%;
     height: 350px;
-    background-image:url("../images/georgia-de-lotz-49w9ogvp5_4-unsplash.jpg");
+    /* image by <<Source: https://p0.pikist.com/photos/759/506/italy-venice-europe-architecture-buildings-street-old-city-old-city.jpg>> */
+    background-image:url("../images/aroma-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,7 +19,7 @@
   bottom: 0;
 }
 
-.location-banner h2{
+.location-banner h1{
     margin: 0;
     padding: .2em;
     color: #FFF;
@@ -33,98 +34,77 @@
 }
 
 /* MAIN*/
-#main {
+main {
     margin: 0 auto;
     /*max-width: 1200px;*/
 }
 
-#map {
-    height: 300px;
-    width: 46%;
-    position: relative;
-    float: right;
-    top: -20.8em;
-    right: 1em;
-}
-
-.coloring {
-    color: #901100;
+.content-shadow-box {
+    padding: 40px 10px  ;
+    margin: 6em 10%;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
     background-color: white;
 }
-
-.likebutton {
-    padding: 1em 1em 1em;
-    text-align: center;
-    cursor: pointer;
-    line-height: 1;
-    border: none;
+.location-desc{
+    font-size: 1.4em;
+    text-align: left;
 }
-
-#userReserveNow {
-    position: relative;
-    left: 8em;
-    top: 1em;
-}
-
-#location-maps {
-    position: relative;
-    margin-top: 4em;
-    /*max-width: 100%;*/
-    height: auto;
-}
-
-    #location-maps h2 {
-        margin: 0;
-    }
-
-.line {
-    width: 100%;
-    border-bottom: 1px solid black;
-    margin-bottom: 2em;
-}
-
-.background {
-    /*background-image: 
-    url(../images/jordi-pujadas-MHzYnDM34IQ-unsplash.jpg);
-    background-image: url(../images/logo2.png);
-    transform: rotate(-30deg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;*/
-    background-color: #901100;
-}
-
-.locationDetails {
-    width: 43%;
+#map {
     height: 300px;
-    margin-left: 1em;
-    margin-bottom: 2em;
-    color: white;
+    width: 53%;
+    position: absolute;
+    right: 2em;
+    top: 0;
 }
 
-    .locationDetails p {
-        margin: 0;
-    }
+.location-title {
+    font-size: 1.6em;
+    text-align: left;
+    margin-left: 0em;
 
-.bookNow p:first-of-type {
-    margin-top: 1em;
 }
 
-.bookNow p:last-of-type {
-    margin-bottom: 1em;
-}
-
-.locationDetails h2 {
+a{
     text-decoration: underline;
-    font-style: normal;
+}
+
+a:hover{
+    color: #901100;
 }
 
 .bookNow {
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
     top: 1em;
 }
+
+
+#location-maps {
+    position: relative;
+    /*max-width: 100%;*/
+    height: auto;
+}
+
+#location-maps h2 {
+    margin: 0;
+}
+
+.locationDetails h3 {
+    text-decoration: underline;
+    font-style: normal;
+    padding-left: -1em;
+    padding: 0;
+    margin: 0;
+}
+
+.locationDetails {
+    width: 50%;
+    height: 300px;
+    margin-bottom: 2em;
+    color:black;
+}
+
 
 .bold {
     font-weight: bolder;
@@ -133,13 +113,51 @@
 .italic {
     font-style: italic;
 }
+/*.line {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 2em;
+}*/
 
-.restaurant h2 {
+/*.coloring {
+    color:white;
+    background-color:  #901100;
+}
+
+.likebutton {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1;
+    border: none;
+}
+
+/*#userReserveNow {
+    position: relative;
+    left: 8em;
+    top: 1em;
+}*/
+
+
+/*.locationDetails p {
+    margin: 9px;
+}
+
+.bookNow p:first-of-type {
+    margin-top: 1em;
+}
+
+.bookNow p:last-of-type {
+    margin-bottom: 1em;
+}*/
+
+
+
+/*.restaurant h2 {
     margin: 0;
     position: relative;
     right: 4.4em;
     text-transform: none;
-    font-style: normal;
 }
 
 .restaurant h3 {
@@ -152,4 +170,4 @@
 
 .bookTable {
     display: none;
-}
+}*/

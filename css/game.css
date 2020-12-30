@@ -1,0 +1,128 @@
+.contest-banner{
+    width: 100%;
+    height: 350px;
+    /*Photo from https://unsplash.com/photos/Wz3u9_GtkWc */
+    background-image:url("../images/getulio-moraes.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -150px;
+    background-size: cover;
+    position: relative;
+}
+
+.contest-banner::after {
+  content: '';
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.contest-banner h1{
+    margin: 0;
+    padding: .2em;
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    top: 50%;
+    z-index: 1;
+}
+
+.contest-container{
+ max-width: 1200px;
+ margin: 0 auto;
+ height: 400px;
+}
+
+.coloring {
+    color: white;
+    background-color: #901100;
+}
+
+#playButton{
+    position: relative;
+    left: 11em;
+    top: 7em;
+}
+
+.likebutton {
+    padding: 1em 1em 1em;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1;
+    border: none;
+}
+
+.game-details {
+float: left;
+width: 50%;;
+height: 20em;
+position: relative;
+top: 2em;
+}
+
+.game-details img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 4em;
+    top: -2.2em;
+    float: right;
+    object-fit: cover;
+}
+.game-details h3 {
+    font-style: normal;
+    color: white;
+    background-color:  #901100;
+    width: 100%;
+    height: 3em;;
+    margin: 0 auto;
+    padding-top: 13px;
+}
+
+.game-details p {
+    margin-left: 3em;
+}
+
+.pizza-container {
+    float: right;
+    width: 45%;
+    height: 20em;
+    position: relative;
+    top: 2em;
+    padding-left: 2em;
+}
+
+.pizza-container p {
+margin-top: 0;
+}
+
+#gamediv{
+    float: left;
+    margin-right: 2em;
+    width: 16em;
+    height: 16em;
+}
+
+#specialPizza{
+    font-weight: bold;
+}
+
+#gamediv img:hover{
+    border : 2px solid  #901100;
+}
+.pizza{
+    height: 8em;
+    width: 8em;
+    object-fit: cover;
+}
+
+.addborder {
+    border: 2px solid red;;
+}

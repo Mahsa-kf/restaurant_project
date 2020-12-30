@@ -29,7 +29,7 @@
   bottom: 0;
 }
 
-.sitemap-banner h2{
+.sitemap-banner h1{
     margin: 0;
     padding: .2em;
     color: #FFF;
@@ -99,7 +99,7 @@
 .collapsed-content {
     list-style-type: square;   
     padding-bottom: 10px;
-    display: "none";
+    display: none;
 }
 
 .collapsed-content li {
@@ -118,6 +118,7 @@
     background-color: #e0dddd;
     border-radius: 25px;
     padding: 1px;
+    transform: rotateX(180deg);
 }
 
 .collapse-btn:focus {

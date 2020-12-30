@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Aroma's Specials | Restaurant Specials</title>
+    <title> Specials | Aroma</title>
     <link rel="stylesheet" href="css/specials.css">
     <link rel="stylesheet" href="css/global.css">
         <script type="text/javascript" src="js/specials.js"></script>
@@ -24,6 +24,9 @@
                             Main navigaiton
                         </h3>
                         <ul>
+                            <li class="reserve-btn">
+                                <a href="event-booking.html">Reservations</a>
+                            </li>
                             <li id="sub-menu">
                                 <a href="menu.html">Menus</a>
                                  <ul>
@@ -49,31 +52,27 @@
                              <li>
                                  <a href="contact-us.html">Contact</a>
                              </li>
-                            <li class="reserve-btn">
-                                <a href="event-booking.html">Reservations</a>
-                            </li>
+
                         </ul>
                     </nav>   
                 </div>
             </header>
         </div>
-        <div class="main-container">
-          <main>
             <div class="main-container">
                 <main  id= "menu" class="menu-bg">
                     <div class="menu-banner main-top-margin">
                         <div>
-                            <h2>Sepcials</h2>
+                            <h1>Sepcials</h1>
                         </div>
                     </div>
                     <div class="tab">
-                        <button class="tablinks active" onclick="openMenus(event, 'lunch')">Lunch</button>
-                        <button class="tablinks" onclick="openMenus(event, 'daily')">Daily</button>
-                        <button class="tablinks" onclick="openMenus(event, 'birthday')">Birthday</button>
+                        <button id="lunch_btn" >Lunch</button>
+                        <button id="daily_btn" >Daily</button>
+                        <button id="birthday_btn" >Birthday</button>
                     </div>
                     
-                    <div id="lunch" class="tabcontent">
-                        <section class="menu-container">
+                    <div id="lunch">
+                        <section class="menu-container tabcontent" >
                             <div class="menu-section-container">
                            
                                 <h3>Lunch Special</h3>
@@ -95,8 +94,8 @@
                        
                         </section>
                     </div>   
-                    <div id="daily" class="tabcontent">
-                        <section class="menu-container">
+                    <div id="daily" >
+                        <section class="menu-container tabcontent">
                         
                             <div class="menu-section-container">
                                 <h3>Daily Special</h3>
@@ -124,7 +123,7 @@
                         
                         </section>
                     </div> 
-                    <div id="birthday" class="tabcontent">
+                    <div id="birthday" class="tabcontent menu-container">
                         <section class="menu-container">
                         
                             <div class="menu-section-container">
@@ -138,8 +137,8 @@
                             </div>
                         </section>
                     </div>
-          </main>
-        </div>
+                </main>
+            </div>
           <footer>
             <div class="footer">
               <div class="footer-navContainer">
@@ -164,7 +163,7 @@
                   <nav class="right">
                       <ul>
                           <li><a href="site-map.html">Sitemap</a></li>
-                          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
                       </ul>
                   </nav>
               </div>
